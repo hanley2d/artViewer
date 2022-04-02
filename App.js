@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, StatusBar } from 'react-native';
+import { Searchbar } from 'react-native-paper';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ArtSearch from './view/ArtSearch';
+import BrowseCollections from './view/BrowseCollections';
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <StatusBar />
+      <Stack.Navigator initialRouteName="ArtSearch">
+        <Stack.Screen options={{ headerShown: false }} name="ArtSearch" component={ArtSearch} />
+        <Stack.Screen name="BrowseCollections" component={BrowseCollections} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
