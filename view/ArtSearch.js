@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, Image, Dimensions, Button, Animated } from 'react-native';
+import { View, Text, FlatList, StyleSheet, Image, Dimensions, Animated } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import { fetchQuery } from '../controller/FetchData';
+import ListItem from './components/ListItem';
 
 const window = Dimensions.get("window");
 const screen = Dimensions.get("screen");
 const ArtSearch = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const onChangeSearch = query => setSearchQuery(query);
-    var json_data;
+
+    const [artwork, setArtwork] = useState([]);
+    const [pagination, setPagination] = useState([]);
+
     return (
         <View style={styles.container}>
             <Searchbar
@@ -16,16 +20,21 @@ const ArtSearch = () => {
                 placeholder="Search"
                 onChangeText={onChangeSearch}
                 value={searchQuery}
-                onIconPress={() => {json_data = fetchQuery(searchQuery);}}
-                onSubmitEditing={() => {json_data = fetchQuery(searchQuery);}}
-            />
+                onIconPress={() => { 
+                    fetchQuery(searchQuery, setArtwork, artwork);
+                }}
+                onSubmitEditing={() => {
+                    fetchQuery(searchQuery, setArtwork, artwork);
+                }}
+            />          
             <FlatList
-            data={json_data}
-            renderItem={({item}) => (
-                <View></View>
-            )}
+                data={artwork}                
+                renderItem={({ item }) => (
+                    <ListItem item={item} />
+                )}
+                keyExtractor={item => item.id}
             />
-            
+
         </View>
     )
 };
@@ -44,7 +53,7 @@ const styles = StyleSheet.create({
     text: {
         color: '#000',
         fontSize: 26,
-    },    
+    },
 });
 
 export default ArtSearch;
