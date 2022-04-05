@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { View, FlatList, StyleSheet, Text, ActivityIndicator } from 'react-native';
 import { Searchbar, Button } from 'react-native-paper';
-import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 import fetchQuery from '../controller/FetchData';
 import ListItem from './components/ListItem';
 
@@ -28,17 +27,15 @@ const ArtSearch = ({ navigation }) => {
     function updatePagination(data) {
         setPagination(data);
     }
-    // maybe need separate functions for paginate up and down
-    const [currPage, setCurrPage] = useState(1);
-    function updateCurrPage(data) {        
-        setCurrPage((page) => page + data);
-        console.log(currPage);
-        fetchArtwork();
-    }
+    // state to manage the current page
+    const [currPage, setCurrPage] = useState(1);    
+    // use effect hook will call fetchArtwork only when the state of currPage changes
+    // this occurs when the user clicks next or previous page buttons 
+    useEffect(() => { fetchArtwork(); }, [currPage]) 
    
     const fetchArtwork = () => {
         setIsLoading(true);
-        fetchQuery(searchQuery, updateArtwork, updatePagination, updateLoading, currPage, updateCurrPage);
+        fetchQuery(searchQuery, updateArtwork, updatePagination, updateLoading, currPage);
     };
 
     return (
@@ -49,12 +46,12 @@ const ArtSearch = ({ navigation }) => {
                 onChangeText={onChangeSearch}
                 value={searchQuery}
                 onIconPress={() => {
-                    setCurrPage(0);
+                    setCurrPage(1);
                     fetchArtwork();
                     moveToTop();
                 }}
                 onSubmitEditing={() => {
-                    setCurrPage(0);
+                    setCurrPage(1);
                     fetchArtwork();
                     moveToTop();
                 }}
@@ -71,10 +68,10 @@ const ArtSearch = ({ navigation }) => {
             />
             <View style={{ flexDirection: "row" }}>
                 {pagination !== null && pagination.current_page > 1 ? (
-                    <Button style={styles.navButtons} onPress={() => updateCurrPage(-1)}>Previous</Button>
+                    <Button style={styles.navButtons} onPress={() => setCurrPage(currPage-1)}>Previous</Button>
                 ) : null}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
-                    <Button style={styles.navButtons} onPress={() => updateCurrPage(1)}>Next</Button>
+                    <Button style={styles.navButtons} onPress={() => setCurrPage(currPage+1)}>Next</Button>
                 ) : null}
             </View>
         </View>
@@ -102,7 +99,7 @@ const styles = StyleSheet.create({
     },
     navButtons: {
         padding: 2,
-        marginHorizontal: 5,
+        marginHorizontal: 50,
         backgroundColor: '#000'
     },
 });
