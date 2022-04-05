@@ -30,8 +30,8 @@ const ArtDetail = ({ route, navigation }) => {
                             Accept: '*/*',
                         },
                     }}></Image>
-                <Text style={{ fontSize: 30 }}>{item.item.title}</Text>
-                <Text>{item.item.artist_display}</Text>
+                <Text style={{ fontSize: 30, color: '#fff' }}>{item.item.title}</Text>
+                <Text style={{color: '#fff'}}>{item.item.artist_display}</Text>
             </Animated.View>            
         </View>
     )

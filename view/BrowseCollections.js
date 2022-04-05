@@ -1,9 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
+import ScrollViewBox from './components/ScrollViewBox';
 
 const BrowseCollections = () => {
     return (
-        <View></View>
+        <View>
+            <ScrollView horizontal={true}>
+
+            </ScrollView>
+        </View>
     )
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Card, Title, Paragraph, Button } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
-import ItemDetail from './ItemDetail';
 
 const ListItem = (item) => {
     //console.log(item);  

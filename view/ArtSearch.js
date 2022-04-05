@@ -11,7 +11,6 @@ const ArtSearch = ({ navigation }) => {
     }
     const [searchQuery, setSearchQuery] = useState('');
     const onChangeSearch = query => setSearchQuery(query);
-
     const flatListRef = useRef();
     function moveToTop() {
         if (artwork.length > 0) {
@@ -28,17 +27,18 @@ const ArtSearch = ({ navigation }) => {
         setPagination(data);
     }
     // state to manage the current page
-    const [currPage, setCurrPage] = useState(1);    
-    // use effect hook will call fetchArtwork only when the state of currPage changes
-    // this occurs when the user clicks next or previous page buttons 
-    useEffect(() => { fetchArtwork(); }, [currPage]) 
-   
+    const [currPage, setCurrPage] = useState(1);
+    // use effect hook will call fetchArtwork only when the state of currPage changes.
+    // this occurs when the user clicks next or previous page buttons and also on initial page render.
+    // because the query data is empty on initial render, no data is actually fetched so no artwork is loaded.
+    useEffect(() => { fetchArtwork(); }, [currPage]);
+
     const fetchArtwork = () => {
-        setIsLoading(true);
+        updateLoading(true);
         fetchQuery(searchQuery, updateArtwork, updatePagination, updateLoading, currPage);
     };
 
-    return (
+    return (        
         <View style={styles.container}>
             <Searchbar
                 style={styles.searchbar}
@@ -56,7 +56,7 @@ const ArtSearch = ({ navigation }) => {
                     moveToTop();
                 }}
             />
-            {isLoading === true ? <ActivityIndicator style={{ margin: 5 }} size="large" color="#0000ff" /> : <Text>{pagination.total ? "Displaying items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total + "." : null}</Text>}
+            {isLoading === true  ? <ActivityIndicator style={{ margin: 5 }} size="large" color="#0000ff" /> : <Text style={styles.text}>{pagination.total ? "Displaying items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total + "." : null}</Text>}
             <FlatList
                 ref={flatListRef}
                 style={styles.flatlist}
@@ -68,34 +68,37 @@ const ArtSearch = ({ navigation }) => {
             />
             <View style={{ flexDirection: "row" }}>
                 {pagination !== null && pagination.current_page > 1 ? (
-                    <Button style={styles.navButtons} onPress={() => setCurrPage(currPage-1)}>Previous</Button>
+                    <Button style={styles.navButtons} onPress={() => { setCurrPage(currPage - 1); moveToTop(); }}>Previous</Button>
                 ) : null}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
-                    <Button style={styles.navButtons} onPress={() => setCurrPage(currPage+1)}>Next</Button>
+                    <Button style={styles.navButtons} onPress={() => { setCurrPage(currPage + 1); moveToTop(); }}>Next</Button>
                 ) : null}
             </View>
+                
         </View>
-
     )
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'hsl(197, 37%, 41%)',
+        backgroundColor: '#000',
         padding: 10,
         alignItems: 'center',
         textAlign: 'center',
     },
     searchbar: {
-        marginTop: 50
+        marginTop: 5,
+        backgroundColor: 'darkslategray',
     },
     text: {
-        color: '#000',
-        fontSize: 26,
+        color: '#fff',
+        fontSize: 16,
     },
     flatlist: {
         width: '100%',
+        margin: 0,
+        padding: 0,
     },
     navButtons: {
         padding: 2,
