@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { Pressable, Text, StyleSheet, Animated } from 'react-native';
+import { colors } from './colors';
 
-const ScrollViewBox = (props) => {
+const RandomButton = ({ subject, onPress }) => {
 
     const touchFeedback = new Animated.Value(1);
     const fadeIn = () => {
@@ -20,13 +21,13 @@ const ScrollViewBox = (props) => {
     };
 
     return (
-        <Animated.View style={{ backgroundColor: props.color, opacity: touchFeedback }}>
+        <Animated.View style={[styles.container, { opacity: touchFeedback, }]}>
             <Pressable
-                style={styles.container}
                 onPressIn={fadeOut}
                 onPressOut={fadeIn}
+                onPress={onPress}
             >
-                <Text>{props.subject}</Text>
+                <Text style={{color: colors.dark_green, fontSize: 16,}}>{subject}</Text>
             </Pressable>
         </Animated.View>
     )
@@ -34,13 +35,16 @@ const ScrollViewBox = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        height: 100,
-        width: 120,
+        width: 100,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height: 40,
+        marginHorizontal: 2,
+        marginVertical: 10,
+        backgroundColor: colors.green_beige,
+        borderRadius: 10,
+
     }
 })
 
-
-
-export default ScrollViewBox;
+export default RandomButton;

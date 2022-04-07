@@ -3,7 +3,6 @@ import { Dimensions, View, Text, Image, StyleSheet, Animated, Button } from 'rea
 import { colors } from './components/colors';
 
 const window = Dimensions.get("window");
-const screen = Dimensions.get("screen");
 const ArtDetail = ({ route, navigation }) => {
 
     const { item } = route.params;

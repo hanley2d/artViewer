@@ -18,7 +18,7 @@ const ListItem = (item) => {
             <Card.Content style={styles.content}>
                 <Card.Cover source={{ uri: `https://www.artic.edu/iiif/2/${item.item.image_id}/full/843,/0/default.jpg` }} />
                 <Text style={styles.title}>{item.item.title}</Text>
-                <Text>{item.item.artist_display}</Text>
+                <Text style={styles.artist_display}>{item.item.artist_display}</Text>
             </Card.Content>
             <Button
                 style={styles.button}
@@ -49,8 +49,9 @@ const styles = StyleSheet.create({
         color: colors.dark_green,
         marginTop: 5,
         fontFamily: 'Roboto',
+        fontWeight: 'bold',
     },
-    paragraph: {
+    artist_display: {
         fontSize: 16,
         color: colors.dark_green
     },

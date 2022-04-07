@@ -53,7 +53,7 @@ const App = () => {
           options={{title: "Browse Collections", headerStyle: {backgroundColor: colors.olive}}} 
           name="BrowseCollections" component={BrowseCollections} />
         <Tab.Screen 
-          options={{title: "Random Art", headerStyle: {backgroundColor: colors.olive}}} 
+          options={{ headerShown: false }}
           name="RandomArt" component={RandomArt} />
       </Tab.Navigator>
     </NavigationContainer>
