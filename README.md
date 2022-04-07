@@ -49,4 +49,8 @@ There are a number of guides and templates for working with README files in awes
 ## Example
 ## Example2
 ## Third Example
+<<<<<<< HEAD
 ## [Fourth Example](http://www.fourthexample.com) 
+=======
+## [Fourth Example](http://www.fourthexample.com) 
+>>>>>>> f18ce56234ef6b264820fc661da3bb8ed7ec3e76
