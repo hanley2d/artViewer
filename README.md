@@ -5,7 +5,7 @@
 
 
 # Table of Contents
-1. [Configuration Instructions](#configurationinstructions)
+1. [Configuration Instructions](#configuration-instructions)
 # Configuration instructions
 
 
