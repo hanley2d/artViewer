@@ -1,27 +1,30 @@
-# Art Viewer App
+# React Native Art Viewer App
+## Using the Art Institute of Chicago API
+
+## CS 455 Final Project
 
 
-Project Documentation:
+# Table of Contents
+1. [Configuration Instructions](#configurationinstructions)
+# Configuration instructions
 
-Half of your project mark (20% over-all) is based on the documentation in your github README file.
 
-A README is a form of documentation that contains information about the project contained within a repository.
+# Installation instructions
 
-The README file typically includes:
+# Operating instructions
 
-     Configuration instructions
-     Installation instructions
-     Operating instructions
-     A manifest (list of files)
-     Copyright information
-     Contact information
-     Bug list
-     Troubleshooting tips
-     Credits and acknowledgments
+# A manifest (list of files)
 
-A README file is arguably the most important part of an open-source software project. Writing an effective README is, unfortunately, more art than science.
+# Copyright information
 
-The best way to learn the art of README writing is through practice. You should practice both reading and writing good README files. Matias Singers maintains a curated list of repositories with well written README files: github.com/matiassingers/awesome-readme
+# Contact information
+
+# Bug list
+
+# Troubleshooting tips
+
+# Credits and acknowledgments
+
 
 Ultimately, the purpose of a README is to instruct the user as to what the application does, how it is compiled and installed and how the application is used. A user should be able to build, run and use your application with minimal effort. If the user encounters an issue, they should be able to get support, therefore you should include some instructions for troubleshooting and a way to contact you in case that fails. Note that it is good practice, although it is not required, that you do not commit directly to a master branch, instead pull from a working branch when changes are considered final.
 
@@ -48,9 +51,8 @@ There are a number of guides and templates for working with README files in awes
 
 ## Example
 ## Example2
+
 ## Third Example
-<<<<<<< HEAD
 ## [Fourth Example](http://www.fourthexample.com) 
 =======
 ## [Fourth Example](http://www.fourthexample.com) 
->>>>>>> f18ce56234ef6b264820fc661da3bb8ed7ec3e76

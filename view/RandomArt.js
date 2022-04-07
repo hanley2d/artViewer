@@ -40,25 +40,25 @@ const RandomArt = () => {
             />
             {isLoading === true ? <ActivityIndicator style={{ margin: 5 }} size="small" color="darkorange" /> :
                 (
-                    
+
                     <ScrollView>
-                    <Animated.View >
-                        <Image
-                            style={styles.image}
-                            source={{
-                                uri: artwork[0] ? `https://www.artic.edu/iiif/2/${artwork[0].image_id}/full/843,/0/default.jpg` : null,
-                                headers: {
-                                    Accept: '*/*',
-                                },
-                            }}>
-                        </Image>
+                        <Animated.View >
+                            <Image
+                                style={styles.image}
+                                source={{
+                                    uri: artwork[0] ? `https://www.artic.edu/iiif/2/${artwork[0].image_id}/full/843,/0/default.jpg` : null,
+                                    headers: {
+                                        Accept: '*/*',
+                                    },
+                                }}>
+                            </Image>
                             <View style={{ marginHorizontal: 20, margin: 10 }}>
                                 <Text style={styles.title}>{artwork[0] ? artwork[0].title : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].artist_display : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].medium_display : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].date_display : null}</Text>
-                            </View>                       
-                    </Animated.View>
+                            </View>
+                        </Animated.View>
                     </ScrollView>
                 )}
         </View>

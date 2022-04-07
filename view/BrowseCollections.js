@@ -50,39 +50,25 @@ const BrowseCollections = () => {
                 <ScrollView horizontal={true} contentContainerStyle={{ height: 50, justifyContent: 'center', alignItems: 'center' }}>
                     <ScrollViewButton subject={'Impressionism'}
                         onPress={() => {
-                            setCurrPage(1);
+                            setCurrPage(1); 
                             onChangeSearch('impressionism');
+                            moveToTop();
                         }}
                     />
                     <ScrollViewButton subject={'Essentials'}
-                        onPress={() => {
-                            setCurrPage(1);
-                            onChangeSearch('essentials');
-                        }}
+                        onPress={() => { setCurrPage(1); onChangeSearch('essentials'); moveToTop(); }}
                     />
                     <ScrollViewButton subject={'Modernism'}
-                        onPress={() => {
-                            setCurrPage(1);
-                            onChangeSearch('modernism');
-                        }}
+                        onPress={() => { setCurrPage(1); onChangeSearch('modernism'); moveToTop(); }}
                     />
                     <ScrollViewButton subject={'Animals'}
-                        onPress={() => {
-                            setCurrPage(1);
-                            onChangeSearch('animals');
-                        }}
+                        onPress={() => { setCurrPage(1); onChangeSearch('animals'); moveToTop(); }}
                     />
                     <ScrollViewButton subject={'Roman'}
-                        onPress={() => {
-                            setCurrPage(1);
-                            onChangeSearch('roman');
-                        }}
+                        onPress={() => { setCurrPage(1); onChangeSearch('roman'); moveToTop(); }}
                     />
                     <ScrollViewButton subject={'Woodblock'}
-                        onPress={() => {
-                            setCurrPage(1);
-                            onChangeSearch('woodblock');
-                        }}
+                        onPress={() => { setCurrPage(1); onChangeSearch('woodblock'); moveToTop(); }}
                     />
                 </ScrollView>
             </View>
