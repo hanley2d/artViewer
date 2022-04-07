@@ -7,16 +7,18 @@ import BrowseCollections from './view/BrowseCollections';
 import ArtDetail from './view/ArtDetail';
 import RandomArt from './view/RandomArt';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { colors } from './view/components/colors'
+import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 const Tab = createBottomTabNavigator();
 const App = () => { 
   
-  // bottom navbar source: https://reactnavigation.org/docs/tab-based-navigation/
+  // bottom navbar and customization source: https://reactnavigation.org/docs/tab-based-navigation/
   // solution for how to hide tab bar button came from https://stackoverflow.com/questions/52362166/react-navigation-hide-one-tab
   // icons: https://oblador.github.io/react-native-vector-icons/
   return (
     <NavigationContainer theme={DarkTheme}>
-      <StatusBar />
+      <StatusBar backgroundColor={colors.olive}/>
       <Tab.Navigator 
         initialRouteName="ArtSearch" 
         screenOptions={({ route }) => ({
@@ -24,9 +26,7 @@ const App = () => {
             let iconName;
 
             if (route.name === 'ArtSearch') {
-              iconName = focused
-                ? 'search-sharp'
-                : 'search-outline';
+              iconName = focused ? 'search-sharp' : 'search-outline';
             } else if (route.name === 'BrowseCollections') {
               iconName = focused ? 'ios-easel' : 'ios-easel-outline';
             }  else if (route.name === 'RandomArt') {
@@ -36,20 +36,25 @@ const App = () => {
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: colors.bright_blue,
           tabBarInactiveTintColor: 'gray',
+          tabBarStyle: {backgroundColor: colors.offwhite}
         })}
       >
         <Tab.Screen options={{ headerShown: false }} name="ArtSearch" component={ArtSearch} />
         <Tab.Screen 
-          options={{title: "Artwork Detail", tabBarButton: props => null,}}
+          options={{title: "Artwork Detail", headerStyle: {backgroundColor: colors.olive}, tabBarButton: props => null,}}
           name="ArtDetail" 
           component={ArtDetail}
           animationEnabled={true}
           animationTypeForReplace={"pop"}  
         />
-        <Tab.Screen name="BrowseCollections" component={BrowseCollections} />
-        <Tab.Screen name="RandomArt" component={RandomArt} />
+        <Tab.Screen 
+          options={{title: "Browse Collections", headerStyle: {backgroundColor: colors.olive}}} 
+          name="BrowseCollections" component={BrowseCollections} />
+        <Tab.Screen 
+          options={{title: "Random Art", headerStyle: {backgroundColor: colors.olive}}} 
+          name="RandomArt" component={RandomArt} />
       </Tab.Navigator>
     </NavigationContainer>
   );

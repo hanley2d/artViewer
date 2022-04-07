@@ -1,5 +1,5 @@
 const fetchQuery = async (query, updateArtwork, updatePagination, updateLoading, currPage) => {
-    const api_query = `https://api.artic.edu/api/v1/artworks/search?q=${query}&limit=10&fields=id,title,image_id,date_display,artist_display,place_of_origin,medium_display,color&page=${currPage}`
+    const api_query = `https://api.artic.edu/api/v1/artworks/search?q=${query}&limit=10&fields=id,title,image_id,date_display,artist_display,medium_display,color&page=${currPage}`
     if (query === "") {
         updateLoading(false);
         return;

@@ -3,6 +3,7 @@ import { View, FlatList, StyleSheet, Text, ActivityIndicator } from 'react-nativ
 import { Searchbar, Button } from 'react-native-paper';
 import fetchQuery from '../controller/FetchData';
 import ListItem from './components/ListItem';
+import { colors } from './components/colors';
 
 const ArtSearch = ({ navigation }) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -42,7 +43,9 @@ const ArtSearch = ({ navigation }) => {
         <View style={styles.container}>
             <Searchbar
                 style={styles.searchbar}
-                placeholder="Search"
+                theme={{ colors: { text: colors.dark_green } }}
+                placeholder="Artwork Search"
+                placeholderTextColor={'gray'}
                 onChangeText={onChangeSearch}
                 value={searchQuery}
                 onIconPress={() => {
@@ -56,7 +59,7 @@ const ArtSearch = ({ navigation }) => {
                     moveToTop();
                 }}
             />
-            {isLoading === true  ? <ActivityIndicator style={{ margin: 5 }} size="large" color="#0000ff" /> : <Text style={styles.text}>{pagination.total ? "Displaying items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total + "." : null}</Text>}
+            {isLoading === true  ? <ActivityIndicator style={{ margin: 5 }} size="small" color="darkorange" /> : null}
             <FlatList
                 ref={flatListRef}
                 style={styles.flatlist}
@@ -68,10 +71,22 @@ const ArtSearch = ({ navigation }) => {
             />
             <View style={{ flexDirection: "row" }}>
                 {pagination !== null && pagination.current_page > 1 ? (
-                    <Button style={styles.navButtons} onPress={() => { setCurrPage(currPage - 1); moveToTop(); }}>Previous</Button>
+                    <Button 
+                        style={styles.navButtons} 
+                        onPress={() => { setCurrPage(currPage - 1); moveToTop(); }}
+                        labelStyle={{ color: colors.teal, fontSize: 16 }}    
+                    >Prev</Button>
                 ) : null}
+                {<Text style={styles.itemsDisplayText}>
+                    {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total : null}
+                </Text>}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
-                    <Button style={styles.navButtons} onPress={() => { setCurrPage(currPage + 1); moveToTop(); }}>Next</Button>
+                    <Button 
+                        style={styles.navButtons} 
+                        onPress={() => { setCurrPage(currPage + 1); moveToTop(); }}
+                        labelStyle={{ color: colors.bright_blue, fontSize: 16,}}
+                        mode="text"
+                        >Next</Button>
                 ) : null}
             </View>
                 
@@ -82,28 +97,34 @@ const ArtSearch = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000',
-        padding: 10,
+        backgroundColor: colors.olive,
+        paddingHorizontal: 20,
         alignItems: 'center',
         textAlign: 'center',
+        justifyContent: 'center'
     },
     searchbar: {
-        marginTop: 5,
-        backgroundColor: 'darkslategray',
+        marginTop: 10,
+        backgroundColor: colors.green_beige,
+        borderRadius: 10,
+        marginBottom: 10,
     },
     text: {
-        color: '#fff',
+        color: colors.offwhite,
         fontSize: 16,
+    },
+    itemsDisplayText: {
+        color: colors.offwhite,
+        fontSize: 16,
+        alignSelf: 'center',
     },
     flatlist: {
         width: '100%',
         margin: 0,
-        padding: 0,
     },
     navButtons: {
-        padding: 2,
-        marginHorizontal: 50,
-        backgroundColor: '#000'
+        marginHorizontal: 20,
+        height: 40,
     },
 });
 
