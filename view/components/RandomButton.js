@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Pressable, Text, StyleSheet, Animated } from 'react-native';
 import { colors } from './colors';
 

@@ -1,21 +1,24 @@
-# React Native Art Viewer App
+# AIC Art Viewer App
 ## Using the Art Institute of Chicago API
 
-## CS 455 Final Project
+## CS 455 Final Project Using React-Native
 
 
 # Table of Contents
- [Project Description](#project-description)
- [Installation Instructions](#installation-instructions)
- [Operating Instructions](#operating-instructions)
- [File Manifest](#file-manifest)
- [Copyright Information](#copyright-information)
- [Contact Information](#contact-information)
- [Bug List](#bug-list)
- [Troubleshooting](#troubleshooting-tips)
- [Credits and Acknowledgements](#credits-and-acknowledgments)
+1. [Project Description](#project-description)
+2. [Features](#features)
+3. [Installation Instructions](#installation-instructions)
+4. [Operating Instructions](#operating-instructions)
+5. [File Manifest](#file-manifest)
+6. [Copyright Information](#copyright-information)
+7. [Contact Information](#contact-information)
+8. [Bug List](#bug-list)
+9. [Troubleshooting](#troubleshooting-tips)
+10. [Credits and Acknowledgements](#credits-and-acknowledgments)
 
 ## Project description
+
+## Features
 ## Installation instructions
 
 ## Operating instructions
