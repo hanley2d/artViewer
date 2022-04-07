@@ -5,25 +5,32 @@
 
 
 # Table of Contents
-1. [Configuration Instructions](#configuration-instructions)
-# Configuration instructions
+ [Project Description](#project-description)
+ [Installation Instructions](#installation-instructions)
+ [Operating Instructions](#operating-instructions)
+ [File Manifest](#file-manifest)
+ [Copyright Information](#copyright-information)
+ [Contact Information](#contact-information)
+ [Bug List](#bug-list)
+ [Troubleshooting](#troubleshooting-tips)
+ [Credits and Acknowledgements](#credits-and-acknowledgments)
 
+## Project description
+## Installation instructions
 
-# Installation instructions
+## Operating instructions
 
-# Operating instructions
+## File Manifest
 
-# A manifest (list of files)
+## Copyright information
 
-# Copyright information
+## Contact information
 
-# Contact information
+## Bug list
 
-# Bug list
+## Troubleshooting tips
 
-# Troubleshooting tips
-
-# Credits and acknowledgments
+## Credits and acknowledgments
 
 
 Ultimately, the purpose of a README is to instruct the user as to what the application does, how it is compiled and installed and how the application is used. A user should be able to build, run and use your application with minimal effort. If the user encounters an issue, they should be able to get support, therefore you should include some instructions for troubleshooting and a way to contact you in case that fails. Note that it is good practice, although it is not required, that you do not commit directly to a master branch, instead pull from a working branch when changes are considered final.
