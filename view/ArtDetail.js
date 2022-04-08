@@ -35,6 +35,7 @@ const ArtDetail = ({ route, navigation }) => {
                     <Text style={styles.artist_display}>{item.item.artist_display}</Text>
                     <Text style={styles.artist_display}>{item.item.medium_display}</Text>
                     <Text style={styles.artist_display}>{item.item.date_display}</Text>
+                    <Text style={styles.artist_display}>The Art Institute of Chicago</Text>
                 </View>
             </Animated.View>
         </View>

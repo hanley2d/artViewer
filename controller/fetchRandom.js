@@ -3,7 +3,7 @@
 //  export const random_image = `https://api.artic.edu/api/v1/artworks?page=${random_number}&limit=1&fields=id,title,image_id,date_display,artist_display,place_of_origin,medium_display,color`
 
 const fetchRandom = async (random, updateArtwork, updateLoading) => {
-    const random_image = `https://api.artic.edu/api/v1/artworks?page=${random}&limit=1&fields=id,title,image_id,date_display,artist_display,place_of_origin,medium_display,color`;
+    const random_image = `https://api.artic.edu/api/v1/artworks?limit=1&fields=id,title,image_id,date_display,artist_display,medium_display&page=${random}`;
     if (random === -1) {
         updateLoading(false);
         return;
@@ -12,6 +12,7 @@ const fetchRandom = async (random, updateArtwork, updateLoading) => {
         const response = await fetch(random_image);
         const json_data = await response.json();
         updateArtwork(json_data.data);        
+        console.log(json_data.data);
         updateLoading(false);
 
     } catch (error) {

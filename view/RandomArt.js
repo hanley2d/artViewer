@@ -33,7 +33,7 @@ const RandomArt = () => {
         <View style={styles.container}>
             <RandomButton subject={'Randomize!'}
                 onPress={() => {
-                    setRandom(randomNumber(1, 116000));
+                    setRandom(randomNumber(0, 55600));
                     console.log(random);
                 }}
             />
@@ -54,6 +54,7 @@ const RandomArt = () => {
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].artist_display : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].medium_display : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].date_display : null}</Text>
+                                <Text style={styles.artist_display}>{artwork[0] ? "The Art Institute of Chicago" : null}</Text>
                             </View>
                     </ScrollView>
                 )}

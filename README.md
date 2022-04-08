@@ -1,8 +1,9 @@
-# Mobile Art Viewer Using the Art Institute of Chicago API
+# artViewer
+## Mobile Art Application Using the Art Institute of Chicago API
 
 ## CS 455 - Mobile Computing: React-Native Project
 
-# Table of Contents
+## Table of Contents
 1. [Project Description](#project-description)
 2. [Features](#features)
 3. [Installation Instructions](#installation-instructions)
@@ -10,23 +11,39 @@
 5. [File Manifest](#file-manifest)
 6. [Copyright Information](#copyright-information)
 7. [Contact Information](#contact-information)
-8. [Bug List](#bug-list)
+8. [Bug List](#bug-list--shortcomings)
 9. [Troubleshooting](#troubleshooting-tips)
 10. [References and credits](#references-and-credits)
 
 ## Project description
-This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data of tonnes of information regarding the Arts Institute of Chicago. For the purposes of this project, I will only be looking at the artwork. https://iiif.io/api/image/2.0/.  Information about the API can be found here https://api.artic.edu/docs/#introduction.
+
+This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data on tonnes of information regarding the Arts Institute of Chicago. This app fetches data from the API about artork located in the museum. It allows the user to search for artwork as well as browse categories and view artwork at random.
+
+### Purpose
+One of the main purposes of this project on a personal level was to learn how to work with an API. Fetching data in React Native is made relatively simple with the [Fetch API](https://reactnative.dev/docs/network) method. The more difficult part is fetching the data exactly when you need it. The React useEffect hook can be used to fetch data only when specific events occur, for example, when a state is updated. Probably some of the methods I used for this project are naiive and may not always follow the best practices, but I believe it works well enough for the purposes of this application.
+
+The reason I chose to work with this specific API is because I enjoy museums. I visited the Art Institute of Chicago a few years ago and was very impressed. I hope to go back someday but, being a university student during a global pandemic, now is not the best time to do that. This app allows me and any other user to see the artwork from anywhere without having to be in Chicago, albeit on a small, somewhat unimpressive screen.
+
+### AIC API
+
+
+Information about the API can be found here https://api.artic.edu/docs/.
+https://iiif.io/api/image/2.0/
 
 ## Features
-<!-- ![ArtSearch](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif) -->
-<!-- ![](./assets/gifs/browse.gif) -->
-<img src="./assets/gifs/search.gif" width="33%">
+### Search Artwork
+<img src="./assets/gifs/search.gif" width="25%">
 
-<img src="./assets/gifs/pagination.gif" width="33%">
+### Pagination
+<img src="./assets/gifs/pagination.gif" width="25%">
 
-<img src="./assets/gifs/browse.gif" width="33%">
+### Browse Art Categories
 
-<img src="./assets/gifs/random.gif" width="33%">
+<img src="./assets/gifs/browse.gif" width="25%">
+
+### View a Random Artwork
+
+<img src="./assets/gifs/random.gif" width="25%">
 
 
 ## Installation instructions
@@ -34,12 +51,19 @@ This project is a React Native application for viewing artwork and information f
 ## Operating instructions
 
 ## File Manifest
-
+```
+- App.js
+- view/ArtSearch.js
+- view/ArtDetail.js
+- view/BrowseCollection.js
+- view/RandomArt.js
+-
+```
 ## Copyright information
 
 ## Contact information
 
-## Bug list
+## Bug list / shortcomings
 
 ## Troubleshooting tips
 
