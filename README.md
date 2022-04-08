@@ -35,20 +35,22 @@ https://iiif.io/api/image/2.0/
 ### Main Features
 #### Search Artwork
 
+
+<img style="float: left; margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
 The SearchArtwork screen allows the user to search for any artwork from the AIC.
-<img style="float: right" src="./assets/gifs/search.gif" width="25%">
+
 
 
 #### Pagination
-<img style="float: right" src="./assets/gifs/pagination.gif" width="25%">
+<img style="float: left; margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
 
 #### Browse Art Categories
 
-<img style="float: right" src="./assets/gifs/browse.gif" width="25%">
+<img style="float: left; margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 
 #### View a Random Artwork
 
-<img style="float: right" src="./assets/gifs/random.gif" width="25%">
+<img style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
 
 ### Smaller Features
 
