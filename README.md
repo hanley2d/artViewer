@@ -18,9 +18,8 @@
 This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data of tonnes of information regarding the Arts Institute of Chicago. For the purposes of this project, I will only be looking at the artwork. https://iiif.io/api/image/2.0/.  Information about the API can be found here https://api.artic.edu/docs/#introduction.
 
 ## Features
-![ArtSearch](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
-
-<img src="https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif" width="33%"/>
+<!-- ![ArtSearch](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif) -->
+![](./assets/gifs/browse.gif)
 
 ![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
