@@ -19,13 +19,19 @@ This project is a React Native application for viewing artwork and information f
 
 ## Features
 <!-- ![Art Search](https://github.com/hanley2d/artViewer/blob/master/assets/gifs/search.gif) -->
-<img src="https://github.com/hanley2d/artViewer/blob/master/assets/gifs/search.gif" width="25%"/>
+[Art Search]: <img src="https://github.com/hanley2d/artViewer/blob/master/assets/gifs/search.gif" width="33%"/>
 
-![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
+[Pagination]: <img src="https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif" width="33%"/>
+
+[Browse]: <img src="https://media.giphy.com/media/TphH6AXOxL7mCNrOuC/giphy.gif" width="33%"/>
+
+[Random]: <img src="https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif" width="33%"/>
+
+<!-- ![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
 ![Browse](https://media.giphy.com/media/TphH6AXOxL7mCNrOuC/giphy.gif)
 
-![Random](https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif)
+![Random](https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif) -->
 ## Installation instructions
 
 ## Operating instructions
