@@ -19,7 +19,8 @@ This project is a React Native application for viewing artwork and information f
 
 ## Features
 <!-- ![ArtSearch](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif) -->
-![](./assets/gifs/browse.gif)
+<!-- ![](./assets/gifs/browse.gif) -->
+![]<img src="./assets/gifs/search.gif" width="33%">
 
 ![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
