@@ -20,6 +20,8 @@ This project is a React Native application for viewing artwork and information f
 ## Features
 ![ArtSearch](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
+![ArtSearch]<img src="https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif" width="33%"/>
+
 ![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
 ![Browse](https://media.giphy.com/media/TphH6AXOxL7mCNrOuC/giphy.gif)
