@@ -18,20 +18,13 @@
 This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data of tonnes of information regarding the Arts Institute of Chicago. For the purposes of this project, I will only be looking at the artwork. https://iiif.io/api/image/2.0/.  Information about the API can be found here https://api.artic.edu/docs/#introduction.
 
 ## Features
-<!-- ![Art Search](https://github.com/hanley2d/artViewer/blob/master/assets/gifs/search.gif) -->
-[Search](<img src="assets/gifs/search.gif" width="33%"/>)
+![Art Search](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
-[Pagination] <img src="https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif" width="33%"/>
-
-[Browse] <img src="https://media.giphy.com/media/TphH6AXOxL7mCNrOuC/giphy.gif" width="33%"/>
-
-Random:<img src="https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif" width="33%"/>
-
-<!-- ![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
+![Pagination](https://media.giphy.com/media/LrkkNsbFBFvkjZCcNC/giphy.gif)
 
 ![Browse](https://media.giphy.com/media/TphH6AXOxL7mCNrOuC/giphy.gif)
 
-![Random](https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif) -->
+![Random](https://media.giphy.com/media/LGsYCxoFQ3im7Wl6bp/giphy.gif)
 ## Installation instructions
 
 ## Operating instructions
