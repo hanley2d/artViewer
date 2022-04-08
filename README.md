@@ -20,31 +20,37 @@
 This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data on tonnes of information regarding the Arts Institute of Chicago. This app fetches data from the API about artork located in the museum. It allows the user to search for artwork as well as browse categories and view artwork at random.
 
 ### Purpose
-One of the main purposes of this project on a personal level was to learn how to work with an API. Fetching data in React Native is made relatively simple with the [Fetch API](https://reactnative.dev/docs/network) method. The more difficult part is fetching the data exactly when you need it. The React useEffect hook can be used to fetch data only when specific events occur, for example, when a state is updated. Probably some of the methods I used for this project are naiive and may not always follow the best practices, but I believe it works well enough for the purposes of this application.
+One of the main purposes of this project on a personal level was to learn how to work with an API. Fetching data in React Native is made relatively simple with the [Fetch API](https://reactnative.dev/docs/network) method. The more difficult part is fetching the data exactly when you need it. The React useEffect hook can be used to fetch data only when specific events occur, for example, when a state is updated. This application uses the useEffect hook combined with the Fetch API in order to fetch data from the AIC API only when requested by the user. Probably some of the methods I used are naive and may not always follow the best practices, but I believe it works well enough for the purposes of this application.
 
 The reason I chose to work with this specific API is because I enjoy museums. I visited the Art Institute of Chicago a few years ago and was very impressed. I hope to go back someday but, being a university student during a global pandemic, now is not the best time to do that. This app allows me and any other user to see the artwork from anywhere without having to be in Chicago, albeit on a small, somewhat unimpressive screen.
 
 ### AIC API
-
+The [AIC API](https://api.artic.edu/docs/) is publicly available for use without need of authorization. Unauthorized users are permitted to make 60 requests to the API per minute before their IP address is timed out. Unless there is a bug that I have not encountered, the way the application is designed should make it quite difficult to exceed that number, although a user could potentially be timed-out by spamming button presses. This app requests only a small amount of information of what is available, including the art id, artist information, title, medium, dominant colour as well as the image id. The image id is required in order to hotlink the images in the application, which is the recommended practice by the AIC.
 
 Information about the API can be found here https://api.artic.edu/docs/.
 https://iiif.io/api/image/2.0/
 
 ## Features
-### Search Artwork
-<img src="./assets/gifs/search.gif" width="25%">
 
-### Pagination
-<img src="./assets/gifs/pagination.gif" width="25%">
+### Main Features
+#### Search Artwork
 
-### Browse Art Categories
+The SearchArtwork screen allows the user to search for any artwork from the AIC.
+<img style="float: right" src="./assets/gifs/search.gif" width="25%">
 
-<img src="./assets/gifs/browse.gif" width="25%">
 
-### View a Random Artwork
+#### Pagination
+<img style="float: right" src="./assets/gifs/pagination.gif" width="25%">
 
-<img src="./assets/gifs/random.gif" width="25%">
+#### Browse Art Categories
 
+<img style="float: right" src="./assets/gifs/browse.gif" width="25%">
+
+#### View a Random Artwork
+
+<img style="float: right" src="./assets/gifs/random.gif" width="25%">
+
+### Smaller Features
 
 ## Installation instructions
 
