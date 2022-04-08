@@ -61,8 +61,8 @@ const BrowseCollections = () => {
                     <ScrollViewButton subject={'Modernism'}
                         onPress={() => { setCurrPage(1); onChangeSearch('modernism'); moveToTop(); }}
                     />
-                    <ScrollViewButton subject={'Animals'}
-                        onPress={() => { setCurrPage(1); onChangeSearch('animals'); moveToTop(); }}
+                    <ScrollViewButton subject={'Landscapes'}
+                        onPress={() => { setCurrPage(1); onChangeSearch('landscapes'); moveToTop(); }}
                     />
                     <ScrollViewButton subject={'Roman'}
                         onPress={() => { setCurrPage(1); onChangeSearch('roman'); moveToTop(); }}
@@ -92,7 +92,7 @@ const BrowseCollections = () => {
                     >Prev</Button>
                 ) : null}
                 {<Text style={styles.itemsDisplayText}>
-                    {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total : null}
+                    {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.total > 10? pagination.offset + 10 : pagination.total) + " of " + pagination.total : null}
                 </Text>}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
                     <Button

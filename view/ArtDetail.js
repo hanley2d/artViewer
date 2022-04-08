@@ -21,7 +21,7 @@ const ArtDetail = ({ route, navigation }) => {
     return (
         <View style={styles.container}>
             <Animated.View style={{ opacity: fadeAnim }}>
-                <Image
+                <Image 
                     style={styles.image}
                     source={{
                         uri: `https://www.artic.edu/iiif/2/${item.item.image_id}/full/843,/0/default.jpg`,

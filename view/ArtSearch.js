@@ -78,7 +78,7 @@ const ArtSearch = ({ navigation }) => {
                     >Prev</Button>
                 ) : null}
                 {<Text style={styles.itemsDisplayText}>
-                    {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.offset + 10) + " of " + pagination.total : null}
+                {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.total > 10? pagination.offset + 10 : pagination.total) + " of " + pagination.total : null}
                 </Text>}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
                     <Button 

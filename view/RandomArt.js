@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dimensions, View, Text, Image, StyleSheet, Animated, ActivityIndicator, ScrollView } from 'react-native';
 import { colors } from './components/colors';
 import RandomButton from './components/RandomButton';
@@ -35,14 +35,11 @@ const RandomArt = () => {
                 onPress={() => {
                     setRandom(randomNumber(1, 116000));
                     console.log(random);
-                    // onChangeSearch('modernism');
                 }}
             />
             {isLoading === true ? <ActivityIndicator style={{ margin: 5 }} size="small" color="darkorange" /> :
                 (
-
                     <ScrollView>
-                        <Animated.View >
                             <Image
                                 style={styles.image}
                                 source={{
@@ -58,7 +55,6 @@ const RandomArt = () => {
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].medium_display : null}</Text>
                                 <Text style={styles.artist_display}>{artwork[0] ? artwork[0].date_display : null}</Text>
                             </View>
-                        </Animated.View>
                     </ScrollView>
                 )}
         </View>
