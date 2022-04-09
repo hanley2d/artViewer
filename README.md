@@ -56,7 +56,7 @@ Search results are paginated in pages of 10 items. The user can proceed to the n
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 
 #### Browse Art Categories
-Users who aren't certain what to search can also browse certain collections by category.  
+Users who aren't certain what to search can also browse certain collections by category. There are only a few categories for now but more can be added with ease.
 
 <br clear="left"/>
 <br />
@@ -72,15 +72,20 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 ### Smaller Features
 
-#### Activity Indicator
+
 <img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/activityIndicator.gif" width="50%">
+
+#### Activity Indicator
+When a user makes a search or presses a button, an activity indicator (spinning circle thing) will appear to let the user know that the information is being processed. The indicator disappears when the data has been fetched and rendered to the screen.
 
 <br clear="left"/>
 <br />
 
 
-#### Tab Bar Page Navigation
 <img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="50%">
+
+#### Tab Bar Page Navigation
+The app has a tab navigation bar at the bottom that the user can use to navigate to different screens. This is provided by [React Navigation](https://reactnavigation.org/docs/bottom-tab-navigator/).
 
 <br clear="left"/>
 <br />
@@ -92,6 +97,15 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 <br clear="left"/>
 <br />
+The "more details" button on the FlatList item card is the colour of the artwork's dominant colour. This is one of the pieces of information provided by the AIC API. It is a completely pointless detail but I thought it was cool so I'm drawing attention to it now.
+
+The command used to capture the colour.
+```javscript
+var item_color = "";
+    if (item.item.color !== null) {
+        item_color = `hsl(${item.item.color.h}, ${item.item.color.s}%, ${item.item.color.l}%)`;
+    }
+```
 
 ## Installation Instructions
 
@@ -101,8 +115,8 @@ Want more variety? The random artwork screen allows the user to randomly select 
 ## File Manifest
 
 
-- <p style="color:#647362">**App.js**</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
-- <p>__view/ArtSearch.js__</p> This screen allows users to make their own queries to the API using the searchbar.
+- <p style="color:#647362">App.js</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
+- <p>view/ArtSearch.js</p> This screen allows users to make their own queries to the API using the searchbar.
 - <p>view/ArtDetail.js</p> This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
 - <p>view/BrowseCollection.js</p> The screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
 - <p>view/RandomArt.js</p> The screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
