@@ -135,14 +135,11 @@ If you have the Expo Go app you can scan the following QR code to run this appli
 
 When starting the artViewer application, the user is first taken to the Art Search screen where they can make a search query. They also have the option to navigate to the Browse Collections or Random Artwork screens. The bottom tab bar can be used to navigate between these three screens.
 
-* <p>Art Search</p>
-On this screen the user can use the search bar to make a query to the API. The query will be send when the user presses the enter key on their keyboard or the magnifying glass icon on the search bar. An activity indicator will appear while the data is being fetched. Once the response has been received, the data items will be loaded into a flatlist and the user can scroll the results. Pressing the 'more details' button will take the user to the Art Detail screen where they will be presented with a more detailed view of the artwork as well as some additional information about the piece.
+* <p>Art Search</p> On this screen the user can use the search bar to make a query to the API. The query will be send when the user presses the enter key on their keyboard or the magnifying glass icon on the search bar. An activity indicator will appear while the data is being fetched. Once the response has been received, the data items will be loaded into a flatlist and the user can scroll the results. Pressing the 'more details' button will take the user to the Art Detail screen where they will be presented with a more detailed view of the artwork as well as some additional information about the piece. The user can also go to the next page or return to the previous page by pressing the 'PREV' and 'NEXT' buttons at the bottom of the screen.
 
-* <p>Browse Collections</p>
-This screen works almost exactly the same as the Art Search screen, except there is a list of predetermined categories that the user can select from instead of a search bar. The user can horizontally scroll the list of categories and select any of the options.
+* <p>Browse Collections</p> This screen works almost exactly the same as the Art Search screen, except there is a list of predetermined categories that the user can select from instead of a search bar. The user can horizontally scroll the list of categories and select any of the options.
 
-* <p>Random Artwork</p>
-On this screen the user can view a randomly chosen artwork. Pressing the 'randomize' button generates a random number which is used to fetch one item from the API. The artwork image along with the information is then displayed below the button. If the response information is long enough to overfill the screen, the user can scroll down to view all the information.
+* <p>Random Artwork</p> On this screen the user can view a randomly chosen artwork. Pressing the 'randomize' button generates a random number which is used to fetch one item from the API. The artwork image along with the information is then displayed below the button. If the response information is long enough to overfill the screen, the user can scroll down to view all the information.
 
 ## File Manifest
 
