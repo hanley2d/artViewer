@@ -1,7 +1,9 @@
 # artViewer
-## Mobile Art Application Using the Art Institute of Chicago API
+### Mobile Art Application Using the Art Institute of Chicago API
 
-## CS 455 - Mobile Computing: React-Native Project
+### CS 455 - Mobile Computing: React-Native Project
+
+![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)![issues](https://img.shields.io/github/issues/hanley2d/artViewer)
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -80,23 +82,20 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 ### Smaller Features
 
+#### Activity Indicator
 
 <img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/activityIndicator.gif" width="50%">
 
-#### Activity Indicator
+
 When a user makes a search or presses a button, an activity indicator (spinning circle thing) will appear to let the user know that the information is being processed. The indicator disappears when the data has been fetched and rendered to the screen.
 
 <br clear="left"/>
 <br />
 
 #### Tab Bar Page Navigation
-The app has a tab navigation bar at the bottom that the user can use to navigate to different screens. This is provided by [React Navigation](https://reactnavigation.org/docs/bottom-tab-navigator/).
-
 <img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="50%">
 
-
-<br clear="left"/>
-<br />
+The app has a tab navigation bar at the bottom that the user can use to navigate to different screens. This is provided by [React Navigation](https://reactnavigation.org/docs/bottom-tab-navigator/).
 
 ### Frivolous Details
 
@@ -119,7 +118,7 @@ var item_color = "";
 
 The artViewer application can be installed on an Android device by sideloading the APK file in the [releases](https://github.com/hanley2d/artViewer/releases) section of this repository. To do this, just download the file on an Android device, find the file and press it to install. You may need to enable additional settings on your device.
 
-Alternatively, this application can be run from the [Expo Go](https://expo.dev/client) app or on the Expo [website](https://snack.expo.dev/@hanley2d/artviewer). 
+Alternatively, this application can be run on both Android and iOS from the [Expo Go](https://expo.dev/client) app or on the Expo [website](https://snack.expo.dev/@hanley2d/artviewer). 
 
 If you have the Expo Go app you can scan the following QR code to run this application.
 
@@ -130,9 +129,18 @@ If you have the Expo Go app you can scan the following QR code to run this appli
 
 ## Operating Instructions
 
+When starting the artViewer application, the user is first taken to the Art Search screen where they can make a search query. They also have the option to navigate to the Browse Collections or Random Artwork screens. The bottom tab bar can be used to navigate between these three screens.
+
+* <p>Art Search</p>
+On this screen the user can use the search bar to make a query to the API. The query will be send when the user presses the enter key on their keyboard or the magnifying glass icon on the search bar. An activity indicator will appear while the data is being fetched. Once the response has been received, the data items will be loaded into a flatlist and the user can scroll the results. Pressing the 'more details' button will take the user to the Art Detail screen where they will be presented with a more detailed view of the artwork as well as some additional information about the piece.
+
+* <p>Browse Collections</p>
+This screen works almost exactly the same as the Art Search screen, except there is a list of predetermined categories that the user can select from instead of a search bar. The user can horizontally scroll the list of categories and select any of the options.
+
+* <p>Random Artwork</p>
+On this screen the user can view a randomly chosen artwork. Pressing the 'randomize' button generates a random number which is used to fetch one item from the API. The artwork image along with the information is then displayed below the button. If the response information is long enough to overfill the screen, the user can scroll down to view all the information.
 
 ## File Manifest
-
 
 - <p style="color:#647362">App.js</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
 - <p>view/ArtSearch.js</p> This screen allows users to make their own queries to the API using the searchbar.
@@ -147,25 +155,30 @@ If you have the Expo Go app you can scan the following QR code to run this appli
 - <p>controller/fetchRandom.js</p> Fetches a random image from the API.
 
 
+## Copyright Information
 
+## Contact Information
+The best way to contact me about any problems with this project is to create a new issue in the [issues section](https://github.com/hanley2d/artViewer/issues) of the project.
 
-## Copyright information
+## Bug List
+1. When the user presses the back button from the ArtDetail screen after having navigated there from the BrowseCollections screen, it will return them to the ArtSearch screen instead of back to the BrowseCollection screen. I believe this is because the Art Viewer screen is the "home" screen of this application. I think this could be fixed by creating a separate stack container for both the ArtSearch and BrowseCollections screen but I did not have time to implement it and the problem does not break the functionality of the app. The user can still press the BrowseCollections button to go back to that screen.
+## Troubleshooting Tips
+The paginaton may stop working if the app has been minimized and unused for a period of time. Closing the app and opening it again will fix the problem, although the fetch data will be lost.
 
-## Contact information
-
-## Bug list / shortcomings
-
-## Troubleshooting tips
+## Potential Future Improvements
+1.
 
 ## References and credits
-[Art Institute of Chicago API](https://api.artic.edu/)
+1. [Art Institute of Chicago API](https://api.artic.edu/)
 
-[React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
+2. [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
 
-Ultimately, the purpose of a README is to instruct the user as to what the application does, how it is compiled and installed and how the application is used. A user should be able to build, run and use your application with minimal effort. If the user encounters an issue, they should be able to get support, therefore you should include some instructions for troubleshooting and a way to contact you in case that fails. Note that it is good practice, although it is not required, that you do not commit directly to a master branch, instead pull from a working branch when changes are considered final.
+3. [Solution for how to hide tab bar button for the ArtDetail screen](https://stackoverflow.com/questions/52362166/react-navigation-hide-one-tab)
 
+4. [Ionicons icons used for navigation bar](https://oblador.github.io/react-native-vector-icons/)
 
+5. [useNavigation hook used to pass response object to ListItem component](https://reactnavigation.org/docs/use-navigation/)
 
-     
+6. [React Native Paper: used the SearchBar, Card and Button components](https://callstack.github.io/react-native-paper/)
 
-
+7. [Github repo](https://github.com/davidrazmadzeExtra/FetchAPI_Movies/blob/main/App.js) that was the inspiration for using the activity indicator when fetching data.
