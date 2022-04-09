@@ -100,7 +100,7 @@ The app has a tab navigation bar at the bottom that the user can use to navigate
 The "more details" button on the FlatList item card is the colour of the artwork's dominant colour. This is one of the pieces of information provided by the AIC API. It is a completely pointless detail but I thought it was cool so I'm drawing attention to it now.
 
 The command used to capture the colour.
-```javscript
+```js
 var item_color = "";
     if (item.item.color !== null) {
         item_color = `hsl(${item.item.color.h}, ${item.item.color.s}%, ${item.item.color.l}%)`;
