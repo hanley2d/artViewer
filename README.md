@@ -1,4 +1,6 @@
 # artViewer
+
+[languages](https://img.shields.io/github.com/hanley2d/artViewer)
 ## Mobile Art Application Using the Art Institute of Chicago API
 
 ## CS 455 - Mobile Computing: React-Native Project
