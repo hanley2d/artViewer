@@ -6,7 +6,7 @@
  * Description: This is the main App file for the project. It controls the navigation of the application.
  * A tab navigator is used instead of the stack navigator that we were shown in class. 
  * It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which 
- * I felt worked nicely for this applicatoin.
+ * I felt worked nicely for this application.
  */
 
 import React from 'react';
