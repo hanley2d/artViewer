@@ -38,22 +38,19 @@ The [AIC API](https://api.artic.edu/docs/) is publicly available for use without
 The SearchArtwork screen allows the user to search for any artwork in the AIC collection.
 
 #### Pagination
-Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. 
-
 
 <img align="left" style="margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
+Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. 
 
 #### Browse Art Categories
-Users who aren't certain what to search can also browse certain collections by category.  
-
 
 <img align="left" style="margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
+Users who aren't certain what to search can also browse certain collections by category.  
 
 #### View a Random Artwork
-Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.  
 
-<br />
 <img style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
+Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.  
 
 ### Smaller Features
 
