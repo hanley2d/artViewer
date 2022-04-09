@@ -81,11 +81,16 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 
 - <p style="color:#647362">App.js</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
-- view/ArtSearch.js: this page allows users to make their own queries to the API using the searchbar.
-- view/ArtDetail.js: This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
-- view/BrowseCollection.js: This file is the screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
-- view/RandomArt.js: This file is the screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
--
+- <p>view/ArtSearch.js</p> This page allows users to make their own queries to the API using the searchbar.
+- <p>view/ArtDetail.js</p> This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
+- <p>view/BrowseCollection.js</p> This file is the screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
+- <p>view/RandomArt.js</p> This file is the screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
+- <p>components/colors.js</p> This file is used to define the custom colours used for the application.
+- <p>components/ListItem.js</p> This file defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js
+- <p>components/RandomButton.js</p> This is a custom pressable with an opacity effect added for when it is pressed.
+- <p>components/ScrollViewButton.js</p> This is a custom pressable with an opacity effect added for when it is pressed. It is designed to be used within a horizontal scrollview so users can scroll through multiple category buttons.
+
+
 
 
 ## Copyright information
