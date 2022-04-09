@@ -156,17 +156,19 @@ On this screen the user can view a randomly chosen artwork. Pressing the 'random
 
 
 ## Copyright Information
+Over 50,000 images from the Art Institute of Chicago API are in the public domain, however there are some that may not be in [some circumstances](https://www.artic.edu/image-licensing). As this project is purely for educational purposes, I don't see it as a problem if some of the images that may be displayed could fall under some copyright law.
 
 ## Contact Information
 The best way to contact me about any problems with this project is to create a new issue in the [issues section](https://github.com/hanley2d/artViewer/issues) of the project.
 
 ## Bug List
 1. When the user presses the back button from the ArtDetail screen after having navigated there from the BrowseCollections screen, it will return them to the ArtSearch screen instead of back to the BrowseCollection screen. I believe this is because the Art Viewer screen is the "home" screen of this application. I think this could be fixed by creating a separate stack container for both the ArtSearch and BrowseCollections screen but I did not have time to implement it and the problem does not break the functionality of the app. The user can still press the BrowseCollections button to go back to that screen.
+
 ## Troubleshooting Tips
 The paginaton may stop working if the app has been minimized and unused for a period of time. Closing the app and opening it again will fix the problem, although the fetch data will be lost.
 
 ## Potential Future Improvements
-1.
+1. Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
 
 ## References and credits
 1. [Art Institute of Chicago API](https://api.artic.edu/)
