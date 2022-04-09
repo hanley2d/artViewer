@@ -40,14 +40,17 @@ The SearchArtwork screen allows the user to search for any artwork in the AIC co
 
 #### Pagination
 Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page.
+
 <img style="float: left; margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
 
 #### Browse Art Categories
 Users who aren't certain what to search can also browse certain collections by category.
+
 <img style="float: left; margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 
 #### View a Random Artwork
 Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.
+
 <img style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
 
 ### Smaller Features
