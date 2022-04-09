@@ -79,12 +79,14 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 ## File Manifest
 
+
 - App.js: This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this applicatoin.
-- view/ArtSearch.js
-- view/ArtDetail.js
-- view/BrowseCollection.js
-- view/RandomArt.js
+- view/ArtSearch.js: this page allows users to make their own queries to the API using the searchbar.
+- view/ArtDetail.js: This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
+- view/BrowseCollection.js: This file is the screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
+- view/RandomArt.js: This file is the screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
 -
+
 
 ## Copyright information
 
