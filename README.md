@@ -33,19 +33,24 @@ The [AIC API](https://api.artic.edu/docs/) is publicly available for use without
 ### Main Features
 #### Search Artwork
 
-
 <img align="left" style="margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
 The SearchArtwork screen allows the user to search for any artwork in the AIC collection.
+
+<br />
 
 #### Pagination
 
 <img align="left" style="margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
 Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. 
 
+<br />
+
 #### Browse Art Categories
 
 <img align="left" style="margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 Users who aren't certain what to search can also browse certain collections by category.  
+
+<br />
 
 #### View a Random Artwork
 
