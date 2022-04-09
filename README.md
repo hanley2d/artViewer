@@ -27,29 +27,27 @@ The reason I chose to work with this specific API is because I enjoy museums. I 
 ### AIC API
 The [AIC API](https://api.artic.edu/docs/) is publicly available for use without need of authorization. Unauthorized users are permitted to make 60 requests to the API per minute before their IP address is timed out. Unless there is a bug that I have not encountered, the way the application is designed should make it quite difficult to exceed that number, although a user could potentially be timed-out by spamming button presses. This app requests only a small amount of information of what is available, including the art id, artist information, title, medium, dominant colour as well as the image id. The image id is required in order to hotlink the images in the application, which is the recommended practice by the AIC.
 
-Information about the API can be found here https://api.artic.edu/docs/.
-https://iiif.io/api/image/2.0/
 
 ## Features
 
 ### Main Features
 #### Search Artwork
-
-
+The SearchArtwork screen allows the user to search for any artwork in the AIC collection. 
 <img style="float: left; margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
-The SearchArtwork screen allows the user to search for any artwork from the AIC.
+
 
 
 
 #### Pagination
+Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page.
 <img style="float: left; margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
 
 #### Browse Art Categories
-
+Users who aren't certain what to search can also browse certain collections by category.
 <img style="float: left; margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 
 #### View a Random Artwork
-
+Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.
 <img style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
 
 ### Smaller Features
@@ -57,6 +55,8 @@ The SearchArtwork screen allows the user to search for any artwork from the AIC.
 ## Installation instructions
 
 ## Operating instructions
+
+While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
 
 ## File Manifest
 ```
