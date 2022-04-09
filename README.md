@@ -31,7 +31,7 @@ const image_link = `https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default
 ```
 
 
-## Features and Operating Instructions
+## Features
 
 ### Main Features
 
@@ -72,23 +72,35 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 ### Smaller Features
 
+#### Activity Indicator
+
+#### Scroll to Top
+
+#### Tab Bar Page Navigation
+
+
+### Frivolous Details
+
+#### Artwork's Dominant Colour
 ## Installation Instructions
 
-## Operating instructions
+## Operating Instructions
 
 
 ## File Manifest
 
 
 - <p style="color:#647362">App.js</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
-- <p>view/ArtSearch.js</p> This page allows users to make their own queries to the API using the searchbar.
+- <p>view/ArtSearch.js</p> This screen allows users to make their own queries to the API using the searchbar.
 - <p>view/ArtDetail.js</p> This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
-- <p>view/BrowseCollection.js</p> This file is the screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
-- <p>view/RandomArt.js</p> This file is the screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
-- <p>components/colors.js</p> This file is used to define the custom colours used for the application.
-- <p>components/ListItem.js</p> This file defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js
-- <p>components/RandomButton.js</p> This is a custom pressable with an opacity effect added for when it is pressed.
-- <p>components/ScrollViewButton.js</p> This is a custom pressable with an opacity effect added for when it is pressed. It is designed to be used within a horizontal scrollview so users can scroll through multiple category buttons.
+- <p>view/BrowseCollection.js</p> The screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
+- <p>view/RandomArt.js</p> The screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
+- <p>components/colors.js</p> Used to define the custom colours used for the application.
+- <p>components/ListItem.js</p> Defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js
+- <p>components/RandomButton.js</p> Custom pressable with an opacity effect added for when it is pressed.
+- <p>components/ScrollViewButton.js</p> Custom pressable with an opacity effect added for when it is pressed. It is designed to be used within a horizontal scrollview so users can scroll through multiple category buttons.
+- <p>controller/FetchData.js</p> Contains the main fetch request for both the ArtSearch.js and BrowseCollection.js files. 
+- <p>controller/fetchRandom.js</p> Fetches a random image from the API.
 
 
 
