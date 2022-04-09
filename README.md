@@ -1,9 +1,9 @@
-# artViewer
-### Mobile Art Application Using the Art Institute of Chicago API
+# <p align="center">artViewer</p>
+### <p align="center">Mobile Art Application Using the Art Institute of Chicago API</p>
 
-### CS 455 - Mobile Computing: React-Native Project
+### <p align="center">CS 455 - Mobile Computing: React-Native Project</p>
 
-![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)![issues](https://img.shields.io/github/issues/hanley2d/artViewer)
+<div align="center">![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)![issues](https://img.shields.io/github/issues/hanley2d/artViewer)</div>
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -168,7 +168,8 @@ The best way to contact me about any problems with this project is to create a n
 The paginaton may stop working if the app has been minimized and unused for a period of time. Closing the app and opening it again will fix the problem, although the fetch data will be lost.
 
 ## Potential Future Improvements
-1. Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
+1. Implement different stack containers for the ArtSearch and BrowseCollection screens as mentioned in the [bug list](#bug-list) section.
+2. Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
 
 ## References and credits
 1. [Art Institute of Chicago API](https://api.artic.edu/)
