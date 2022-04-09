@@ -3,7 +3,11 @@
 
 ### <p align="center">CS 455 - Mobile Computing: React-Native Project</p>
 
-<div align="center">![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)![issues](https://img.shields.io/github/issues/hanley2d/artViewer)</div>
+<div align="center">
+
+![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)![issues](https://img.shields.io/github/issues/hanley2d/artViewer)
+
+</div>
 
 ## Table of Contents
 1. [Project Description](#project-description)
