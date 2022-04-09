@@ -1,3 +1,14 @@
+/**
+ * File: App.js
+ * Author: David Hanley
+ * Last modified: 2022-04-09
+ * 
+ * Description: This is the main App file for the project. It controls the navigation of the application.
+ * A tab navigator is used instead of the stack navigator that we were shown in class. 
+ * It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which 
+ * I felt worked nicely for this applicatoin.
+ */
+
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
@@ -8,7 +19,6 @@ import ArtDetail from './view/ArtDetail';
 import RandomArt from './view/RandomArt';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { colors } from './view/components/colors'
-import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 const Tab = createBottomTabNavigator();
 const App = () => { 

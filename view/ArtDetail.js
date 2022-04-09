@@ -1,12 +1,23 @@
+/**
+ * File: ArtDetail.js
+ * Author: David Hanley
+ * Last modified: 2022-04-09
+ * 
+ * Description: This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
+ * 
+ */
+
 import React, { useRef, useEffect } from 'react';
-import { Dimensions, View, Text, Image, StyleSheet, Animated, Button } from 'react-native';
+import { Dimensions, View, Text, Image, StyleSheet, Animated } from 'react-native';
 import { colors } from './components/colors';
 
+// window size is used for the maximum width of the image in order to maintain the proper aspect ratio
 const window = Dimensions.get("window");
 const ArtDetail = ({ route, navigation }) => {
-
+    // item is passed to this page from ListItem.js using the useNavigation hook from @react-navigation/native
     const { item } = route.params;
-
+    // image is faded in upon page render to make it a bit less abrupt.
+    // perhaps not necessary but I wanted to encorporate some animation in my project
     const fadeAnim = useRef(new Animated.Value(0)).current;
     useEffect(() => fadeIn(), []);
 

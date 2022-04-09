@@ -1,6 +1,4 @@
 # artViewer
-
-[languages](https://img.shields.io/github.com/hanley2d/artViewer)
 ## Mobile Art Application Using the Art Institute of Chicago API
 
 ## CS 455 - Mobile Computing: React-Native Project
@@ -17,7 +15,7 @@
 9. [Troubleshooting](#troubleshooting-tips)
 10. [References and credits](#references-and-credits)
 
-## Project description
+## Project Description
 
 This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data on tonnes of information regarding the Arts Institute of Chicago. This app fetches data from the API about artork located in the museum. It allows the user to search for artwork as well as browse categories and view artwork at random.
 
@@ -27,10 +25,13 @@ One of the main purposes of this project on a personal level was to learn how to
 The reason I chose to work with this specific API is because I enjoy museums. I visited the Art Institute of Chicago a few years ago and was very impressed. I hope to go back someday but, being a university student during a global pandemic, now is not the best time to do that. This app allows me and any other user to see the artwork from anywhere without having to be in Chicago, albeit on a small, somewhat unimpressive screen.
 
 ### AIC API
-The [AIC API](https://api.artic.edu/docs/) is publicly available for use without need of authorization. Unauthorized users are permitted to make 60 requests to the API per minute before their IP address is timed out. Unless there is a bug that I have not encountered, the way the application is designed should make it quite difficult to exceed that number, although a user could potentially be timed-out by spamming button presses. This app requests only a small amount of information of what is available, including the art id, artist information, title, medium, dominant colour as well as the image id. The image id is required in order to hotlink the images in the application, which is the recommended practice by the AIC.
+The [AIC API](https://api.artic.edu/docs/) is publicly available for use without need of authorization. Unauthorized users are permitted to make 60 requests to the API per minute before their IP address is timed out. Unless there is a bug that I have not encountered, the way the application is designed should make it quite difficult to exceed that number, although a user could potentially be timed-out by spamming button presses. This app requests only a small amount of information of what is available, including the art id, artist information, title, medium, dominant colour as well as the image id. The image id is required in order to hotlink the images in the application, which is the recommended practice by the AIC. Displaying all the different images can be done by inserting the image id into an address provided by the AIC like so: 
+```javascript
+const image_link = `https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default.jpg`;
+```
 
 
-## Features
+## Features and Operating Instructions
 
 ### Main Features
 
@@ -38,7 +39,7 @@ The [AIC API](https://api.artic.edu/docs/) is publicly available for use without
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
 
 #### Search Artwork
-The SearchArtwork screen allows the user to search for any artwork in the AIC collection.
+The SearchArtwork screen allows the user to search for any artwork in the AIC collection. While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
 
 <br clear="left"/>
 <br />
@@ -71,15 +72,14 @@ Want more variety? The random artwork screen allows the user to randomly select 
 
 ### Smaller Features
 
-## Installation instructions
+## Installation Instructions
 
 ## Operating instructions
 
-While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
 
 ## File Manifest
 
-- App.js
+- App.js: This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this applicatoin.
 - view/ArtSearch.js
 - view/ArtDetail.js
 - view/BrowseCollection.js

@@ -1,5 +1,16 @@
+/**
+ * File: BrowseCollections.js
+ * Author: David Hanley
+ * Last modified: 2022-04-09
+ * 
+ * Description: This file is the screen for the Browsing Collection. It is very similar to the ArtSearch screen, 
+ * the difference being that the search queries are predetermined as buttons with subjects.
+ * When the user pushes a button, the data for that particular subject is fetched.
+ * The buttons are customized pressables that are placed in a scrollview that the user can slide horizontally.
+ */
+
 import React, { useState, useRef, useEffect } from 'react';
-import { View, ScrollView, StyleSheet, FlatList, Text, Pressable, ActivityIndicator } from 'react-native';
+import { View, ScrollView, StyleSheet, FlatList, Text, ActivityIndicator } from 'react-native';
 import { Button } from 'react-native-paper';
 import fetchQuery from '../controller/FetchData';
 import ListItem from './components/ListItem';
@@ -72,7 +83,7 @@ const BrowseCollections = () => {
                     />
                 </ScrollView>
             </View>
-
+            {/* Display the activity indicator or not */}
             {isLoading === true ? <ActivityIndicator style={{ margin: 5 }} size="small" color="darkorange" /> : null}
             <FlatList
                 ref={flatListRef}
@@ -83,12 +94,13 @@ const BrowseCollections = () => {
                 )}
                 keyExtractor={item => item.id}
             />
+            {/* Pagination display logic */}
             <View style={{ flexDirection: "row", justifyContent: 'center', }}>
                 {pagination !== null && pagination.current_page > 1 ? (
                     <Button
                         style={styles.navButtons}
                         onPress={() => { setCurrPage(currPage - 1); moveToTop(); }}
-                        labelStyle={{ color: colors.teal, fontSize: 16 }}
+                        labelStyle={{ color: colors.bright_blue, fontSize: 16 }}
                     >Prev</Button>
                 ) : null}
                 {<Text style={styles.itemsDisplayText}>

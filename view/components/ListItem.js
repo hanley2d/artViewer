@@ -1,3 +1,12 @@
+/**
+ * File: ListItem.js
+ * Author: David Hanley
+ * Last modified: 2022-04-09
+ * 
+ * Description: this file defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js
+ * The list items use some components imported from react native paper
+ */
+
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { Card, Button } from 'react-native-paper';
@@ -5,9 +14,12 @@ import { useNavigation } from '@react-navigation/native';
 import { colors } from './colors.js';
 
 const ListItem = (item) => {
-
+    // this hook is used to create a navigation state for this component because it is not a screen in the navigation tab
+    // https://reactnavigation.org/docs/use-navigation/
     const navigation = useNavigation();
-
+    
+    // variable used to store the dominant colour from the artwork fetched from API.
+    // used as colour for the 'more details' button.
     var item_color = "";
     if (item.item.color !== null) {
         item_color = `hsl(${item.item.color.h}, ${item.item.color.s}%, ${item.item.color.l}%)`;
@@ -29,7 +41,6 @@ const ListItem = (item) => {
                     });
                 }}>More detail
             </Button>
-
         </Card>
     );
 };

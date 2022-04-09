@@ -1,3 +1,11 @@
+/**
+ * File: RandomButton.js
+ * Author: David Hanley
+ * Last modified: 2022-04-09
+ * 
+ * Description: This is a custom pressable with an opacity effect added for when it is pressed.
+ */
+
 import React from 'react';
 import { Pressable, Text, StyleSheet, Animated } from 'react-native';
 import { colors } from './colors';
