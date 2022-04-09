@@ -52,6 +52,14 @@ Search results are paginated in pages of 10 items. The user can proceed to the n
 <br clear="left"/>
 <br />
 
+<img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/art_detail.png" width="25%">
+
+#### Artwork Detail
+The user can view an artwork with more detail by pressing the 'more details' button on one of the FlatList items.
+
+<br clear="left"/>
+<br />
+
 
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
 
@@ -81,11 +89,11 @@ When a user makes a search or presses a button, an activity indicator (spinning 
 <br clear="left"/>
 <br />
 
+#### Tab Bar Page Navigation
+The app has a tab navigation bar at the bottom that the user can use to navigate to different screens. This is provided by [React Navigation](https://reactnavigation.org/docs/bottom-tab-navigator/).
 
 <img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="50%">
 
-#### Tab Bar Page Navigation
-The app has a tab navigation bar at the bottom that the user can use to navigate to different screens. This is provided by [React Navigation](https://reactnavigation.org/docs/bottom-tab-navigator/).
 
 <br clear="left"/>
 <br />
@@ -99,7 +107,7 @@ The app has a tab navigation bar at the bottom that the user can use to navigate
 <br />
 The "more details" button on the FlatList item card is the colour of the artwork's dominant colour. This is one of the pieces of information provided by the AIC API. It is a completely pointless detail but I thought it was cool so I'm drawing attention to it now.
 
-The command used to capture the colour.
+The command used to capture the colour:
 ```js
 var item_color = "";
     if (item.item.color !== null) {
@@ -108,6 +116,17 @@ var item_color = "";
 ```
 
 ## Installation Instructions
+
+The artViewer application can be installed on an Android device by sideloading the APK file in the [releases](https://github.com/hanley2d/artViewer/releases) section of this repository. To do this, just download the file on an Android device, find the file and press it to install. You may need to enable additional settings on your device.
+
+Alternatively, this application can be run from the [Expo Go](https://expo.dev/client) app or on the Expo [website](https://snack.expo.dev/@hanley2d/artviewer). 
+
+If you have the Expo Go app you can scan the following QR code to run this application.
+
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/QR_code.png" width="25%">
+
+<br clear="left"/>
+<br />
 
 ## Operating Instructions
 
@@ -139,20 +158,14 @@ var item_color = "";
 ## Troubleshooting tips
 
 ## References and credits
-[1]: https://api.artic.edu/
+[Art Institute of Chicago API](https://api.artic.edu/)
+
+[React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
 
 Ultimately, the purpose of a README is to instruct the user as to what the application does, how it is compiled and installed and how the application is used. A user should be able to build, run and use your application with minimal effort. If the user encounters an issue, they should be able to get support, therefore you should include some instructions for troubleshooting and a way to contact you in case that fails. Note that it is good practice, although it is not required, that you do not commit directly to a master branch, instead pull from a working branch when changes are considered final.
 
-Other features that contribute to a great README file may include:
 
-     A project logo
-     Project badges
-     Demo screenshots / gifs
-     Table of contents
-     Concise project description
-     Clear install instructions
-     Features list
-     Links to further reading
-     Change log
+
+     
 
 
