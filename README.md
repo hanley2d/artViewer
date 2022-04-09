@@ -31,31 +31,41 @@ The [AIC API](https://api.artic.edu/docs/) is publicly available for use without
 ## Features
 
 ### Main Features
-#### Search Artwork
+
 
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
+
+#### Search Artwork
 The SearchArtwork screen allows the user to search for any artwork in the AIC collection.
 
-<br /><br />
-
-#### Pagination
+<br clear="left"/>
+<br />
 
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
+
+#### Pagination
 Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. 
 
-<br /><br />
+<br clear="left"/>
+<br />
 
-#### Browse Art Categories
 
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
+
+#### Browse Art Categories
 Users who aren't certain what to search can also browse certain collections by category.  
 
+<br clear="left"/>
 <br />
+
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
 
 #### View a Random Artwork
 
-<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
 Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.  
+
+<br clear="left"/>
+<br />
 
 ### Smaller Features
 
@@ -66,14 +76,14 @@ Want more variety? The random artwork screen allows the user to randomly select 
 While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
 
 ## File Manifest
-```
+
 - App.js
 - view/ArtSearch.js
 - view/ArtDetail.js
 - view/BrowseCollection.js
 - view/RandomArt.js
 -
-```
+
 ## Copyright information
 
 ## Contact information
