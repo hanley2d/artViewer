@@ -73,15 +73,26 @@ Want more variety? The random artwork screen allows the user to randomly select 
 ### Smaller Features
 
 #### Activity Indicator
-<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/activityIndicator.gif" width="33%">
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/activityIndicator.gif" width="50%">
+
+<br clear="left"/>
+<br />
 
 
 #### Tab Bar Page Navigation
-<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="33%">
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="50%">
+
+<br clear="left"/>
+<br />
 
 ### Frivolous Details
 
 #### Artwork's Dominant Colour
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/colour_detail.png" width="75%">
+
+<br clear="left"/>
+<br />
+
 ## Installation Instructions
 
 ## Operating Instructions
@@ -90,8 +101,8 @@ Want more variety? The random artwork screen allows the user to randomly select 
 ## File Manifest
 
 
-- <p style="color:#647362">App.js</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
-- <p>view/ArtSearch.js</p> This screen allows users to make their own queries to the API using the searchbar.
+- <p style="color:#647362">**App.js**</p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
+- <p>__view/ArtSearch.js__</p> This screen allows users to make their own queries to the API using the searchbar.
 - <p>view/ArtDetail.js</p> This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
 - <p>view/BrowseCollection.js</p> The screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
 - <p>view/RandomArt.js</p> The screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
