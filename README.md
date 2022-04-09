@@ -47,7 +47,7 @@ The SearchArtwork screen allows the user to search for any artwork in the AIC co
 <img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
 
 #### Pagination
-Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. 
+Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. The scroll bar automatically scrolls to the top when the user presses to the next or previous page.
 
 <br clear="left"/>
 <br />
@@ -73,11 +73,11 @@ Want more variety? The random artwork screen allows the user to randomly select 
 ### Smaller Features
 
 #### Activity Indicator
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/activityIndicator.gif" width="33%">
 
-#### Scroll to Top
 
 #### Tab Bar Page Navigation
-
+<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/tabNavBar.gif" width="33%">
 
 ### Frivolous Details
 
