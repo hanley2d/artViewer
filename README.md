@@ -113,9 +113,9 @@ The "more details" button on the FlatList item card is the colour of the artwork
 The command used to capture the colour:
 ```js
 var item_color = "";
-    if (item.item.color !== null) {
-        item_color = `hsl(${item.item.color.h}, ${item.item.color.s}%, ${item.item.color.l}%)`;
-    }
+if (item.item.color !== null) {
+     item_color = `hsl(${item.item.color.h}, ${item.item.color.s}%, ${item.item.color.l}%)`;
+}
 ```
 ---
 
@@ -182,7 +182,7 @@ The best way to contact me about any problems with this project is to create a n
 2. Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
 
 ---
-## References and credits
+## References and Credits
 1. [Art Institute of Chicago API](https://api.artic.edu/)
 
 2. [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
