@@ -189,7 +189,7 @@ When starting the artViewer application, the user is first taken to the Art Sear
 ## Copyright Information
 Over 50,000 images from the Art Institute of Chicago API are in the public domain, however there are some works that may not be in [some circumstances](https://www.artic.edu/terms). This project is purely educational and not for commercial purposes so it should fall under the fair use/fair dealing exception.
 
-This code for this project falls under an [MIT license](https://github.com/hanley2d/artViewer/blob/master/LICENSE) and is open source. 
+The code for this project falls under an [MIT license](https://github.com/hanley2d/artViewer/blob/master/LICENSE) and is open source. 
 
 ---
 
