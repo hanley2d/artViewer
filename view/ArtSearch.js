@@ -49,6 +49,7 @@ const ArtSearch = ({ navigation }) => {
     // because the query data is empty on initial render, no data is actually fetched so no artwork is loaded.
     useEffect(() => { fetchArtwork(); }, [currPage]);
 
+    // fetchArtwork function call. All the necessary information that needs to be sent is passed so that it can be updated when the response is received.
     const fetchArtwork = () => {
         updateLoading(true);
         fetchQuery(searchQuery, updateArtwork, updatePagination, updateLoading, currPage);

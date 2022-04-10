@@ -18,26 +18,31 @@ import ScrollViewButton from './components/ScrollViewButton';
 import { colors } from './components/colors';
 
 const BrowseCollections = () => {
-
+    // this state will be used to display an activity indicator when the application is fetching the data.
+    // the state changes once the data response is received and the items are loaded into a flatlist.
     const [isLoading, setIsLoading] = useState(false);
     function updateLoading(data) {
         setIsLoading(data);
     }
+    // search query state that updates as the user input changes
+    // when a button is pressed, this will be updated
     const [searchQuery, setSearchQuery] = useState('');
     function onChangeSearch(value) {
         setSearchQuery(value);
     }
+    // useRef hook used on the flatlist in order to move the list to the top during pagination or a new search
     const flatListRef = useRef();
     function moveToTop() {
         if (artwork.length > 0) {
             flatListRef.current.scrollToIndex({ index: 0 })
         }
     };
-
+    // this is the array state used to store the response object from the fetch request for the art data
     const [artwork, setArtwork] = useState([]);
     function updateArtwork(data) {
         setArtwork(data);
     }
+    // this is the array used to store the response object specifically for pagination
     const [pagination, setPagination] = useState({});
     function updatePagination(data) {
         setPagination(data);
@@ -48,15 +53,15 @@ const BrowseCollections = () => {
     // this occurs when the user clicks next or previous page buttons and also on initial page render.
     // because the query data is empty on initial render, no data is actually fetched so no artwork is loaded.
     useEffect(() => { fetchArtwork(); }, [currPage, searchQuery]);
-
+    // fetchArtwork function call. All the necessary information that needs to be sent is passed so that it can be updated when the response is received.
     const fetchArtwork = () => {
         updateLoading(true);
         fetchQuery(searchQuery, updateArtwork, updatePagination, updateLoading, currPage);
     };
 
     return (
-
         <View style={styles.container}>
+            {/* Horizontal scrollview of buttons */}
             <View style={{ marginVertical: 10 }}>
                 <ScrollView horizontal={true} contentContainerStyle={{ height: 50, justifyContent: 'center', alignItems: 'center' }}>
                     <ScrollViewButton subject={'Impressionism'}

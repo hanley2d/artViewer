@@ -25,14 +25,18 @@ function randomNumber(min, max) {
 
 const RandomArt = () => {
 
+    // this state will be used to display an activity indicator when the application is fetching the data.
+    // the state changes once the data response is received and the items are loaded into a flatlist.
     const [isLoading, setIsLoading] = useState(false);
     function updateLoading(data) {
         setIsLoading(data);
     }
+    // this is the array state used to store the response object from the fetch request for the art data
     const [artwork, setArtwork] = useState([]);
     function updateArtwork(data) {
         setArtwork(data);
     }
+    // random number state
     const [random, setRandom] = useState(-1);
     // function to call the fetch request.
     const fetchArtwork = () => {

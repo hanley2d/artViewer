@@ -1,7 +1,7 @@
 # <p align="center">artViewer</p>
 ### <p align="center">Mobile Art Application Using the Art Institute of Chicago API</p>
 
-### <p align="center">CS 455 - Mobile Computing: React-Native Project</p>
+### <p align="center">CS 455 - Mobile Computing: React-Native Project</p><p align="center">University of Regina</p>
 
 <div align="center">
 
@@ -186,3 +186,7 @@ The paginaton may stop working if the app has been minimized and unused for a pe
 6. [React Native Paper: used the SearchBar, Card and Button components](https://callstack.github.io/react-native-paper/)
 
 7. [Github repo](https://github.com/davidrazmadzeExtra/FetchAPI_Movies/blob/main/App.js) that was the inspiration for using the activity indicator when fetching data.
+
+8. [Information on fetch requests in React Native](https://reactnative.dev/docs/network)
+
+9. [Tutorial on asynchronous functions used for fetching data](https://www.youtube.com/watch?v=PgZ9npYJZzU)
