@@ -72,7 +72,7 @@ French, 1859-1891",
 <img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/search.gif" width="25%">  
 
 #### Search Artwork
-The SearchArtwork screen allows the user to search for any artwork in the AIC collection. While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
+The SearchArtwork screen allows the user to search for any artwork in the AIC collection. While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able to view more information about the artwork by pressing "more detail" or navigate to one of the other screens by means of the bottom tab navigation bar.
 
 <br clear="left"/>
 <br />
