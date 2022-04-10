@@ -22,13 +22,14 @@ const fetchQuery = async (query, updateArtwork, updatePagination, updateLoading,
         return;
     }
     try {
+        // if successful, set artwork and pagination states with response data and turn off activity indicator.
         const response = await fetch(api_query);
         const json_data = await response.json();
-        console.log(json_data.pagination);
+        //console.log(json_data);
         updateArtwork(json_data.data);
         updatePagination(json_data.pagination);
         updateLoading(false);
-
+    // catches and logs the error if one occurs
     } catch (error) {
         console.log(error);
     }

@@ -34,7 +34,7 @@ const App = () => {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-
+            // tab bar icon logic
             if (route.name === 'ArtSearch') {
               iconName = focused ? 'search-sharp' : 'search-outline';
             } else if (route.name === 'BrowseCollections') {
@@ -43,7 +43,6 @@ const App = () => {
               iconName = focused ? 'ios-flask' : 'ios-flask-outline';
             } 
 
-            // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: colors.bright_blue,
@@ -53,6 +52,7 @@ const App = () => {
       >
         <Tab.Screen options={{ headerShown: false }} name="ArtSearch" component={ArtSearch} />
         <Tab.Screen 
+          // tab bar props set to null so that Artwork Detail does not appear in bottom bar.
           options={{title: "Artwork Detail", headerStyle: {backgroundColor: colors.olive}, tabBarButton: props => null,}}
           name="ArtDetail" 
           component={ArtDetail}

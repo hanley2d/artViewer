@@ -99,7 +99,7 @@ const BrowseCollections = () => {
                 )}
                 keyExtractor={item => item.id}
             />
-            {/* Pagination display logic */}
+            {/* Pagination display logic. same as in ArtSearch.js */}
             <View style={{ flexDirection: "row", justifyContent: 'center', }}>
                 {pagination !== null && pagination.current_page > 1 ? (
                     <Button

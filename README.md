@@ -36,7 +36,33 @@ The [AIC API](https://api.artic.edu/docs/) is publicly available for use without
 ```javascript
 const image_link = `https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default.jpg`;
 ```
+The data that is collected from the API includes the id, title, image id, date, artist information, medium and dominant colour. To do this, a fetch request is made to the following address:
+
+```js
+const api_query = `https://api.artic.edu/api/v1/artworks/search?q=${query}&limit=10&fields=id,title,image_id,date_display,artist_display,medium_display,color&page=${currPage}`
+```
+The response object for one of the artworks looks like this: 
+```bash
+Object {
+      "_score": 147.65532,
+      "artist_display": "Georges Seurat
+French, 1859-1891",
+      "color": Object {
+        "h": 59,
+        "l": 52,
+        "percentage": 0.002095873918287094,
+        "population": 1217,
+        "s": 12,
+      },
+      "date_display": "1884/86",
+      "id": 27992,
+      "image_id": "2d484387-2509-5e8e-2c43-22f9981972eb",
+      "medium_display": "Oil on canvas",
+      "title": "A Sunday on La Grande Jatte — 1884",
+    },
+```
 ---
+
 
 ## Features
 
@@ -161,7 +187,7 @@ When starting the artViewer application, the user is first taken to the Art Sear
 
 ---
 ## Copyright Information
-Over 50,000 images from the Art Institute of Chicago API are in the public domain, however there are some that may not be in [some circumstances](https://www.artic.edu/image-licensing). As this project is purely for educational purposes, I don't see it as a problem if some of the images that may be displayed could fall under some copyright law.
+Over 50,000 images from the Art Institute of Chicago API are in the public domain, however there are some works that may not be in [some circumstances](https://www.artic.edu/terms). This project is purely educational and not for commercial purposes so I believe it falls under the fair use/fair dealing exception.
 
 ---
 

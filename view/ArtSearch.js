@@ -88,6 +88,7 @@ const ArtSearch = ({ navigation }) => {
             />
             {/* Pagination display logic */}
             <View style={{ flexDirection: "row" }}>
+                {/* Prev button only appears when we are not on page 1 */}
                 {pagination !== null && pagination.current_page > 1 ? (
                     <Button
                         style={styles.navButtons}
@@ -95,9 +96,11 @@ const ArtSearch = ({ navigation }) => {
                         labelStyle={{ color: colors.bright_blue, fontSize: 16 }}
                     >Prev</Button>
                 ) : null}
+                {/* displays info about how many items were returned from query. */}
                 {<Text style={styles.itemsDisplayText}>
                     {pagination.total ? "Items " + (pagination.offset + 1) + "-" + (pagination.total > 10 ? pagination.offset + 10 : pagination.total) + " of " + pagination.total : null}
                 </Text>}
+                {/* next button will not appear if user is on final page or if response has only 1 page */}
                 {pagination !== null && pagination.current_page < pagination.total_pages ? (
                     <Button
                         style={styles.navButtons}
