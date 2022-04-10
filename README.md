@@ -59,7 +59,7 @@ Search results are paginated in pages of 10 items. The user can proceed to the n
 <br clear="left"/>
 <br />
 
-<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/art_detail.png" width="25%">
+<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/art_detail.gif" width="25%">
 
 #### Artwork Detail
 The user can view an artwork with more detail by pressing the 'more details' button on one of the FlatList items. The artwork uses an animated fade-in effect in order to not be too abrupt of a change when transitioning from one screen to the next.
