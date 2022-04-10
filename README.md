@@ -42,7 +42,7 @@ const image_link = `https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default
 ### Main Features
 
 
-<img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/search.gif" width="25%">  
+<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/search.gif" width="25%">  
 
 #### Search Artwork
 The SearchArtwork screen allows the user to search for any artwork in the AIC collection. While the fetch request is being performed an activity indicator (spinning circle thing) will appear until the data can be loaded. Once the data has been fetched, the response object will be loaded into a flatlist of cards which features a cropped image of the artwork as well as the title and artist name. The user is also able 
@@ -50,24 +50,24 @@ The SearchArtwork screen allows the user to search for any artwork in the AIC co
 <br clear="left"/>
 <br />
 
-<img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/pagination.gif" width="25%">
+<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/pagination.gif" width="25%">
 
 #### Pagination
-Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. The scroll bar automatically scrolls to the top when the user presses to the next or previous page.
+Search results are paginated in pages of 10 items. The user can proceed to the next page or backtrack to the previous page. The scroll bar automatically scrolls to the top when the user presses to the next or previous page. The pagination data is provided by the AIC API. The state of the user's current page is maintained in a state hook, and updated when the user presses a button. This update causes a useEffect hook to fetch the next page of data from the API.
 
 <br clear="left"/>
 <br />
 
-<img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/art_detail.png" width="25%">
+<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/art_detail.png" width="25%">
 
 #### Artwork Detail
-The user can view an artwork with more detail by pressing the 'more details' button on one of the FlatList items.
+The user can view an artwork with more detail by pressing the 'more details' button on one of the FlatList items. The artwork uses an animated fade-in effect in order to not be too abrupt of a change when transitioning from one screen to the next.
 
 <br clear="left"/>
 <br />
 
 
-<img align="left" style="float:left;margin-right: 25px" src="./assets/gifs/browse.gif" width="25%">
+<img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/browse.gif" width="25%">
 
 #### Browse Art Categories
 Users who aren't certain what to search can also browse certain collections by category. There are only a few categories for now but more can be added with ease.
@@ -75,7 +75,7 @@ Users who aren't certain what to search can also browse certain collections by c
 <br clear="left"/>
 <br />
 
-<img  align="left" style="float: left; margin-right: 25px" src="./assets/gifs/random.gif" width="25%">
+<img  align="left" style="float: left; margin-right: 50px" src="./assets/gifs/random.gif" width="25%">
 
 #### View a Random Artwork
 
