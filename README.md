@@ -70,7 +70,7 @@ The user can view an artwork with more detail by pressing the 'more details' but
 <img align="left" style="float:left;margin-right: 50px" src="./assets/gifs/browse.gif" width="25%">
 
 #### Browse Art Categories
-Users who aren't certain what to search can also browse certain collections by category. There are only a few categories for now but more can be added with ease.
+Users who aren't certain what to search can also browse certain collections by category. There are only a few categories for now but more can be added with ease. The horizontal scrollbar allows multiple categories to be added without taking up too much room on the screen at one time.
 
 <br clear="left"/>
 <br />
@@ -79,7 +79,7 @@ Users who aren't certain what to search can also browse certain collections by c
 
 #### View a Random Artwork
 
-Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC.  
+Want more variety? The random artwork screen allows the user to randomly select one of the over 100 000 pieces of artwork from the AIC. A random image is found by setting the limit to one and the page number to the random number.
 
 <br clear="left"/>
 <br />
@@ -166,7 +166,7 @@ The best way to contact me about any problems with this project is to create a n
 1. When the user presses the back button from the ArtDetail screen after having navigated there from the BrowseCollections screen, it will return them to the ArtSearch screen instead of back to the BrowseCollection screen. I believe this is because the Art Viewer screen is the "home" screen of this application. I think this could be fixed by creating a separate stack container for both the ArtSearch and BrowseCollections screen but I did not have time to implement it and the problem does not break the functionality of the app. The user can still press the BrowseCollections button to go back to that screen.
 
 ## Troubleshooting Tips
-The paginaton may stop working if the app has been minimized and unused for a period of time. Closing the app and opening it again will fix the problem, although the fetch data will be lost.
+- The paginaton may stop working if the app has been minimized and unused for a period of time. Closing the app and opening it again will fix the problem, although the fetch data will be lost.
 
 ## Potential Future Improvements
 1. Implement different stack containers for the ArtSearch and BrowseCollection screens as mentioned in the [bug list](#bug-list) section.
