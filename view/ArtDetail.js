@@ -21,6 +21,10 @@ const ArtDetail = ({ route, navigation }) => {
     const fadeAnim = useRef(new Animated.Value(0)).current;
     useEffect(() => fadeIn(), []);
 
+    /**
+     * @function fadeIn
+     * @description used to fade in the image when it is rendered.
+     */
     const fadeIn = () => {
         Animated.timing(fadeAnim, {
             toValue: 1,

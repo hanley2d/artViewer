@@ -17,6 +17,13 @@ const window = Dimensions.get("window");
 
 // function to generate a random integer between min and max inclusive. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values_inclusive
+/**
+ * @function randomNumber
+ * @description used to generate a random integer between the given min and max
+ * @param {*} min - minimum desired integer
+ * @param {*} max - maximum desired integer
+ * @returns - an integer from the minimum and maximum inclusive
+ */
 function randomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);

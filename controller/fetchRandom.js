@@ -6,10 +6,14 @@
  * Description: this file fetches a random image from the API. 
  * There are 116019 items in the data so a random number from 0 to 116019 is chosen and the fields are set to a limit of one item.
  * Then the random number can be inserted into the page parameter to return only one item.
- * 
- * @param {*} random 
- * @param {*} updateArtwork 
- * @param {*} updateLoading 
+ */
+/**
+ * @function fetchRandom
+ * @description fetches data for a random artwork. 
+ * @param {*} random - a random number generated in RandomArt.js
+ * @param {*} updateArtwork - helper function to update artwork array state
+ * @param {*} updateLoading - helper function to update loading state
+ * @returns nothing if random param = -1. otherwise it updates the artwork and loading states.
  */
 
 const fetchRandom = async (random, updateArtwork, updateLoading) => {
