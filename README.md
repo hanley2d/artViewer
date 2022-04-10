@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<a href="">![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)</a>
+<a href="https://github.com/hanley2d/artViewer">![last-updated](https://img.shields.io/github/last-commit/hanley2d/artViewer)</a>
 <a href="https://github.com/hanley2d/artViewer/issues">![issues](https://img.shields.io/github/issues/hanley2d/artViewer)</a>
 
 </div>
