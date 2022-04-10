@@ -185,19 +185,11 @@ The best way to contact me about any problems with this project is to create a n
 ---
 ## References and Credits
 1. [Art Institute of Chicago API](https://api.artic.edu/)
-
 2. [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
-
 3. [Solution for how to hide tab bar button for the ArtDetail screen](https://stackoverflow.com/questions/52362166/react-navigation-hide-one-tab)
-
 4. [Ionicons icons used for navigation bar](https://oblador.github.io/react-native-vector-icons/)
-
 5. [useNavigation hook used to pass response object to ListItem component](https://reactnavigation.org/docs/use-navigation/)
-
 6. [React Native Paper: used the SearchBar, Card and Button components](https://callstack.github.io/react-native-paper/)
-
 7. [Github repo](https://github.com/davidrazmadzeExtra/FetchAPI_Movies/blob/main/App.js) that was the inspiration for using the activity indicator when fetching data.
-
 8. [Information on fetch requests in React Native](https://reactnative.dev/docs/network)
-
 9. [Tutorial on asynchronous functions used for fetching data](https://www.youtube.com/watch?v=PgZ9npYJZzU)
