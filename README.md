@@ -1,5 +1,3 @@
-<img align="center" style="margin-right: 50px" src="./assets/gifs/logo.svg" width="100%">
-
 # <p align="center">artViewer</p>
 ### <p align="center">Mobile Art Application Using the Art Institute of Chicago API</p>
 
