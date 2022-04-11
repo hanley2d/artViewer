@@ -199,7 +199,7 @@ The best way to contact me about any problems with this project is to create a n
 ---
 
 ## Bug List
-1. When the user presses the back button from the ArtDetail screen after having navigated there from the BrowseCollections screen, it will return them to the ArtSearch screen instead of back to the BrowseCollection screen. I believe this is because the Art Viewer screen is the "home" screen of this application. I think this could be fixed by creating a separate stack container for both the ArtSearch and BrowseCollections screen but I did not have time to implement it and the problem does not break the functionality of the app. The user can still press the BrowseCollections button to go back to that screen.
+- When the user presses the back button from the ArtDetail screen after having navigated there from the BrowseCollections screen, it will return them to the ArtSearch screen instead of back to the BrowseCollection screen. I believe this is because the Art Viewer screen is the "home" screen of this application. I think this could be fixed by creating a separate stack container for both the ArtSearch and BrowseCollections screen but I did not have time to implement it and the problem does not break the functionality of the app. The user can still press the BrowseCollections button to go back to that screen.
 
 ---
 ## Troubleshooting Tips
@@ -207,8 +207,8 @@ The best way to contact me about any problems with this project is to create a n
 
 ---
 ## Potential Future Improvements
-1. Implement different stack containers for the ArtSearch and BrowseCollection screens as mentioned in the [bug list](#bug-list) section.
-2. Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
+- Implement different stack containers for the ArtSearch and BrowseCollection screens as mentioned in the [bug list](#bug-list) section.
+- Image display size: The way the app is set up, the correct aspect ratio of the image is maintained but the maximum height of an image is the width of the screen. This means that images that are significantly longer than they are wide will be displayed a bit smaller than is ideal. I didn't have time to figure out a better solution within the timelines of the project but hope to do so in the future.
 
 ---
 ## References and Credits
