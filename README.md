@@ -173,17 +173,19 @@ When starting the artViewer application, the user is first taken to the Art Sear
 ---
 ## File Manifest
 
-- <p style="color:#647362"><a href="https://github.com/hanley2d/artViewer/blob/master/App.js">App.js</a></p> This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/ArtSearch.js">view/ArtSearch.js</a></p> This screen allows users to make their own queries to the API using the searchbar.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/ArtDetail.js">view/ArtDetail.js</a></p> This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/BrowseCollections.js">view/BrowseCollection.js</a></p> The screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/RandomArt.js">view/RandomArt.js</a></p> The screen for displaying random artwork. It is fairly similar in function to the ArtDetail page.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/colors.js">components/colors.js</a></p> Used to define the custom colours used for the application. The colours are meant to be subtle and non-imposing so as not to draw attention away from the artwork. Kind of like an art museum.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/ListItem.js">components/ListItem.js</a></p> Defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/RandomButton.js">components/RandomButton.js</a></p> Custom pressable with an opacity effect added for when it is pressed.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/ScrollViewButton.js">components/ScrollViewButton.js</a></p> Custom pressable with an opacity effect added for when it is pressed. It is designed to be used within a horizontal scrollview so users can scroll through multiple category buttons.
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/controller/FetchData.js">controller/FetchData.js</a></p> Contains the main fetch request for both the ArtSearch.js and BrowseCollection.js files. 
-- <p><a href="https://github.com/hanley2d/artViewer/blob/master/controller/fetchRandom.js">controller/fetchRandom.js</a></p> Fetches a random image from the API.
+| path/filename     | description     |
+|:-------------|:----------------|
+|<p style="color:#647362"><a href="https://github.com/hanley2d/artViewer/blob/master/App.js">App.js</a></p> | This is the main App file for the project. It controls the navigation of the application. A tab navigator is used instead of the stack navigator that we were shown in class. It effectively functions in the same way, except the tab navigator has a built-in navigation bottom bar which I felt worked nicely for this application. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/ArtSearch.js">view/ArtSearch.js</a></p> | This screen allows users to make their own queries to the API using the searchbar. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/ArtDetail.js">view/ArtDetail.js</a></p> | This screen is displayed when the user presses the "more details" button on one of the flatlist items in ArtSearch.js and BrowseCellections.js. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/BrowseCollections.js">view/BrowseCollection.js</a></p> | The screen for the Browsing Collection. It is very similar to the ArtSearch screen, the difference being that the search queries are predetermined as buttons with subjects. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/RandomArt.js">view/RandomArt.js</a></p> | The screen for displaying random artwork. It is fairly similar in function to the ArtDetail page. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/colors.js">components/colors.js</a></p> | Used to define the custom colours used for the application. The colours are meant to be subtle and non-imposing so as not to draw attention away from the artwork. Kind of like an art museum. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/ListItem.js">components/ListItem.js</a></p> | Defines a custom card component that is used to display the items in the flatlists of ArtSearch.js and BrowseCollections.js |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/RandomButton.js">components/RandomButton.js</a></p> | Custom pressable with an opacity effect added for when it is pressed. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/view/components/ScrollViewButton.js">components/ScrollViewButton.js</a></p> | Custom pressable with an opacity effect added for when it is pressed. It is designed to be used within a horizontal scrollview so users can scroll through multiple category buttons. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/controller/FetchData.js">controller/FetchData.js</a></p> | Contains the main fetch request for both the ArtSearch.js and BrowseCollection.js files. |
+| <p><a href="https://github.com/hanley2d/artViewer/blob/master/controller/fetchRandom.js">controller/fetchRandom.js</a></p> | Fetches a random image from the API. |
 
 ---
 ## Copyright Information
@@ -212,7 +214,7 @@ The best way to contact me about any problems with this project is to create a n
 
 ---
 ## References and Credits
-1. [Art Institute of Chicago API](https://api.artic.edu/)
+1. [Art Institute of Chicago API](https://api.artic.edu/) 
 2. [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
 3. [Solution](https://stackoverflow.com/questions/52362166/react-navigation-hide-one-tab) for how to hide tab bar button for the ArtDetail screen.
 4. [Ionicons icons](https://oblador.github.io/react-native-vector-icons/) used for navigation bar.
