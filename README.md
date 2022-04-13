@@ -24,7 +24,7 @@
 
 ## Project Description
 
-This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data on tonnes of information regarding the Arts Institute of Chicago. This app fetches data from the API about artork located in the museum. It allows the user to search for artwork as well as browse categories and view artwork at random.
+This project is a React Native application for viewing artwork and information from the Art Institute of Chicago's public API. The AIC API is a REST-style API that provides data on tonnes of information regarding the Arts Institute of Chicago. This app fetches data from the API about artwork located in the museum. It allows the user to search for artwork as well as browse categories and view artwork at random.
 
 ### Purpose
 One of the main purposes of this project on a personal level was to learn how to work with an API. Fetching data in React Native is made relatively simple with the [Fetch API](https://reactnative.dev/docs/network) method. The more difficult part is fetching the data exactly when you need it. The React useEffect hook can be used to fetch data only when specific events occur, for example, when a state is updated. This application uses the useEffect hook combined with the Fetch API in order to fetch data from the AIC API only when requested by the user. Probably some of the methods I used are naive and may not always follow the best practices, but I believe it works well enough for the purposes of this application.
@@ -158,6 +158,23 @@ If you have the Expo Go app you can scan the following QR code to run this appli
 
 <br clear="left"/>
 <br />
+
+This project can also be run on a local machine. This requires [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or yarn) and [Expo CLI](https://docs.expo.dev/workflow/expo-cli/#installation) as well as the Expo Go app to run the app on your device.
+
+Once NPM and Expo CLI are installed, you can run the following commands:  
+Clone the repository:
+```bash
+git clone git@github.com:hanley2d/artViewer.git
+```
+Change to the project root directory and install project dependencies:
+```bash
+npm install
+```
+Run the app:
+```bash
+expo start --tunnel
+```
+You should then be able to connect to the local server through the Expo Go app on your mobile device provided it is connected to the same network.
 
 ---
 ## Operating Instructions
