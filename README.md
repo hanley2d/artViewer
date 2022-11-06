@@ -1,7 +1,6 @@
 # <p align="center">artViewer</p>
-### <p align="center">Mobile Art Application Using the Art Institute of Chicago API</p>
+### <p align="center">React Native Mobile Art Application Using the Art Institute of Chicago API</p>
 
-### <p align="center">React-Native Project</p><p align="center">University of Regina</p>
 
 <div align="center">
 
